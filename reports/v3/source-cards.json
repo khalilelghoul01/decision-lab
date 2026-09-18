@@ -1,0 +1,88 @@
+{
+  "boolq": {
+    "dataset": "google/boolq",
+    "revision": "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+    "source_url": "https://huggingface.co/datasets/google/boolq",
+    "license_tag": [
+      "cc-by-sa-3.0"
+    ],
+    "language": [
+      "en"
+    ],
+    "note": "Upstream metadata; this does not grant additional rights."
+  },
+  "sst2": {
+    "dataset": "stanfordnlp/sst2",
+    "revision": "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+    "source_url": "https://huggingface.co/datasets/stanfordnlp/sst2",
+    "license_tag": [
+      "unknown"
+    ],
+    "language": [
+      "en"
+    ],
+    "note": "Upstream metadata; this does not grant additional rights."
+  },
+  "ag_news": {
+    "dataset": "fancyzhx/ag_news",
+    "revision": "eb185aade064a813bc0b7f42de02595523103ca4",
+    "source_url": "https://huggingface.co/datasets/fancyzhx/ag_news",
+    "license_tag": [
+      "unknown"
+    ],
+    "language": [
+      "en"
+    ],
+    "note": "Upstream metadata; this does not grant additional rights."
+  },
+  "snli": {
+    "dataset": "stanfordnlp/snli",
+    "revision": "cdb5c3d5eed6ead6e5a341c8e56e669bb666725b",
+    "source_url": "https://huggingface.co/datasets/stanfordnlp/snli",
+    "license_tag": [
+      "cc-by-sa-4.0"
+    ],
+    "language": [
+      "en"
+    ],
+    "note": "Upstream metadata; this does not grant additional rights."
+  },
+  "banking77": {
+    "dataset": "mteb/banking77",
+    "revision": "18072d2685ea682290f7b8924d94c62acc19c0b2",
+    "source_url": "https://huggingface.co/datasets/mteb/banking77",
+    "license_tag": "mit",
+    "language": [
+      "eng"
+    ],
+    "note": "Upstream metadata; this does not grant additional rights."
+  },
+  "emotion": {
+    "dataset": "dair-ai/emotion",
+    "revision": "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+    "source_url": "https://huggingface.co/datasets/dair-ai/emotion",
+    "license_tag": [
+      "other"
+    ],
+    "language": [
+      "en"
+    ],
+    "note": "Upstream metadata; this does not grant additional rights."
+  },
+  "piqa": {
+    "dataset": "nthngdy/piqa",
+    "revision": "467437b6dc793b01c07946dd3e800b9bd3199993",
+    "source_url": "https://huggingface.co/datasets/nthngdy/piqa",
+    "license_tag": "not declared in card metadata",
+    "language": null,
+    "note": "Upstream metadata; this does not grant additional rights."
+  },
+  "absa": {
+    "dataset": "tomaarsen/setfit-absa-semeval-restaurants",
+    "revision": "8885372fe73256f96bb60f65b550538ac5c26047",
+    "source_url": "https://huggingface.co/datasets/tomaarsen/setfit-absa-semeval-restaurants",
+    "license_tag": "not declared in card metadata",
+    "language": null,
+    "note": "Upstream metadata; this does not grant additional rights."
+  }
+}

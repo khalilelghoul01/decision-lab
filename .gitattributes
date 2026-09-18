@@ -1,0 +1,6 @@
+# Preserve upstream notices; don't treat their original formatting as project lint.
+licenses/** -whitespace linguist-vendored=true
+reports/** linguist-generated=true
+evals/*.json linguist-generated=true
+browser/public/jev-suite-v3.json linguist-generated=true
+sdk/src/schemas.ts linguist-generated=true

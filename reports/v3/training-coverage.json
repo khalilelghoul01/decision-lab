@@ -1,0 +1,93 @@
+{
+  "through_step": 3200,
+  "sampling_draws": 102400,
+  "unique_training_records": 67393,
+  "selected_checkpoint_coverage": {
+    "step": 2800,
+    "sampling_draws": 89600,
+    "unique_training_records": 61521
+  },
+  "rng_state_matches_checkpoint": true,
+  "tasks": {
+    "absa": {
+      "draws": 6428,
+      "unique_records": 1621,
+      "available_records": 1644
+    },
+    "ag_news": {
+      "draws": 6267,
+      "unique_records": 5737,
+      "available_records": 36000
+    },
+    "banking77": {
+      "draws": 6409,
+      "unique_records": 4729,
+      "available_records": 9817
+    },
+    "boolq": {
+      "draws": 6274,
+      "unique_records": 4170,
+      "available_records": 7214
+    },
+    "emotion": {
+      "draws": 6466,
+      "unique_records": 5313,
+      "available_records": 15792
+    },
+    "piqa": {
+      "draws": 6333,
+      "unique_records": 5181,
+      "available_records": 14628
+    },
+    "snli": {
+      "draws": 6312,
+      "unique_records": 5937,
+      "available_records": 50000
+    },
+    "sst2": {
+      "draws": 6555,
+      "unique_records": 5749,
+      "available_records": 24000
+    },
+    "synthetic_aspect": {
+      "draws": 6435,
+      "unique_records": 3596,
+      "available_records": 5000
+    },
+    "synthetic_email": {
+      "draws": 6587,
+      "unique_records": 3677,
+      "available_records": 4995
+    },
+    "synthetic_qualification": {
+      "draws": 6326,
+      "unique_records": 3573,
+      "available_records": 4999
+    },
+    "synthetic_risk": {
+      "draws": 6299,
+      "unique_records": 3583,
+      "available_records": 4992
+    },
+    "synthetic_routing": {
+      "draws": 6557,
+      "unique_records": 3707,
+      "available_records": 4992
+    },
+    "synthetic_support": {
+      "draws": 6425,
+      "unique_records": 3623,
+      "available_records": 4991
+    },
+    "synthetic_tool_policy": {
+      "draws": 6295,
+      "unique_records": 3573,
+      "available_records": 4992
+    },
+    "synthetic_verification": {
+      "draws": 6432,
+      "unique_records": 3624,
+      "available_records": 5000
+    }
+  }
+}

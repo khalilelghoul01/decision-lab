@@ -1,0 +1,334 @@
+{
+  "temperature": 1.2975177150979105,
+  "calibration_examples": 1600,
+  "objective": "Two-order multiclass negative log likelihood",
+  "nll_before": 0.24961055130112997,
+  "nll_after": 0.24022743823435388,
+  "bounds": [
+    0.1,
+    10
+  ],
+  "accuracy_gate_passed": true,
+  "gate": "No more than 1 pp lower macro accuracy in either public or synthetic calibration tasks",
+  "quantized": {
+    "overall": {
+      "count": 1600,
+      "accuracy": 0.910625,
+      "nll": 0.24022743823435388,
+      "brier": 0.13124940778095873,
+      "ece": 0.0146466587744075,
+      "high_confidence_errors": 23,
+      "truncated": 0
+    },
+    "macro_accuracy": 0.910625,
+    "public_macro_accuracy": 0.83,
+    "synthetic_macro_accuracy": 0.99125,
+    "tasks": {
+      "sst2": {
+        "count": 100,
+        "accuracy": 0.92,
+        "nll": 0.19212009893184184,
+        "brier": 0.11180698275469972,
+        "ece": 0.020533297884225962,
+        "high_confidence_errors": 2,
+        "truncated": 0
+      },
+      "piqa": {
+        "count": 100,
+        "accuracy": 0.69,
+        "nll": 0.6096411312794621,
+        "brier": 0.4219520683177686,
+        "ece": 0.07941786235330194,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "boolq": {
+        "count": 100,
+        "accuracy": 0.74,
+        "nll": 0.4779012221436157,
+        "brier": 0.31410591567014,
+        "ece": 0.07601691973039286,
+        "high_confidence_errors": 1,
+        "truncated": 0
+      },
+      "emotion": {
+        "count": 100,
+        "accuracy": 0.87,
+        "nll": 0.4205598584193428,
+        "brier": 0.2044341113764353,
+        "ece": 0.06776327252370919,
+        "high_confidence_errors": 2,
+        "truncated": 0
+      },
+      "synthetic_email": {
+        "count": 100,
+        "accuracy": 0.99,
+        "nll": 0.01215564201424186,
+        "brier": 0.008442573207437241,
+        "ece": 0.008169753412955534,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_aspect": {
+        "count": 100,
+        "accuracy": 0.99,
+        "nll": 0.01141929542140601,
+        "brier": 0.006179232404744538,
+        "ece": 0.00890098156020716,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "absa": {
+        "count": 100,
+        "accuracy": 0.69,
+        "nll": 0.9829888997067502,
+        "brier": 0.47515465236645715,
+        "ece": 0.1915680841366154,
+        "high_confidence_errors": 13,
+        "truncated": 0
+      },
+      "banking77": {
+        "count": 100,
+        "accuracy": 0.96,
+        "nll": 0.19019558222115085,
+        "brier": 0.0839744539089787,
+        "ece": 0.0683004821699877,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_support": {
+        "count": 100,
+        "accuracy": 0.99,
+        "nll": 0.051514123357273664,
+        "brier": 0.022179688259064592,
+        "ece": 0.013170916840254204,
+        "high_confidence_errors": 1,
+        "truncated": 0
+      },
+      "snli": {
+        "count": 100,
+        "accuracy": 0.83,
+        "nll": 0.480450913550758,
+        "brier": 0.25943612409121997,
+        "ece": 0.08244529440434009,
+        "high_confidence_errors": 1,
+        "truncated": 0
+      },
+      "synthetic_risk": {
+        "count": 100,
+        "accuracy": 0.97,
+        "nll": 0.09083162902496224,
+        "brier": 0.05323050864311915,
+        "ece": 0.02324454742759191,
+        "high_confidence_errors": 2,
+        "truncated": 0
+      },
+      "ag_news": {
+        "count": 100,
+        "accuracy": 0.94,
+        "nll": 0.28273932448471134,
+        "brier": 0.12248455882379716,
+        "ece": 0.09446746905960844,
+        "high_confidence_errors": 1,
+        "truncated": 0
+      },
+      "synthetic_tool_policy": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.010284376590064924,
+        "brier": 0.0025262441695963517,
+        "ece": 0.009507298804002917,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_routing": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.001480454268046206,
+        "brier": 1.0000924828418799e-05,
+        "ece": 0.0014769890210796222,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_qualification": {
+        "count": 100,
+        "accuracy": 0.99,
+        "nll": 0.02884981906628806,
+        "brier": 0.014072615635861712,
+        "ece": 0.0229276641959017,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_verification": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.0005066412697460901,
+        "brier": 7.939411909314362e-07,
+        "ece": 0.0005064323658515724,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      }
+    }
+  },
+  "fp16": {
+    "overall": {
+      "count": 1600,
+      "accuracy": 0.91375,
+      "nll": 0.23579774971929937,
+      "brier": 0.12828163603071532,
+      "ece": 0.010887195285222522,
+      "high_confidence_errors": 23,
+      "truncated": 0
+    },
+    "macro_accuracy": 0.9137500000000001,
+    "public_macro_accuracy": 0.8375,
+    "synthetic_macro_accuracy": 0.99,
+    "tasks": {
+      "synthetic_verification": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.00022584432183221783,
+        "brier": 1.2147463170804165e-07,
+        "ece": 0.00022581024149403994,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_qualification": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.018416958106408712,
+        "brier": 0.00883912884435898,
+        "ece": 0.01539970838891029,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_email": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.005586402085208169,
+        "brier": 0.002405407703664739,
+        "ece": 0.004795889353310933,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_support": {
+        "count": 100,
+        "accuracy": 0.97,
+        "nll": 0.05709254812377241,
+        "brier": 0.030657211995917994,
+        "ece": 0.01953456804481562,
+        "high_confidence_errors": 1,
+        "truncated": 0
+      },
+      "snli": {
+        "count": 100,
+        "accuracy": 0.83,
+        "nll": 0.45508870732998496,
+        "brier": 0.2493719449730627,
+        "ece": 0.05828788719653405,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "sst2": {
+        "count": 100,
+        "accuracy": 0.91,
+        "nll": 0.2302157674609999,
+        "brier": 0.1317347466576554,
+        "ece": 0.02490566846074219,
+        "high_confidence_errors": 2,
+        "truncated": 0
+      },
+      "synthetic_aspect": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.001913258779309836,
+        "brier": 3.458475263894823e-05,
+        "ece": 0.0019022783585068703,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_risk": {
+        "count": 100,
+        "accuracy": 0.95,
+        "nll": 0.1738901787848236,
+        "brier": 0.09051067751840393,
+        "ece": 0.04730863581780871,
+        "high_confidence_errors": 3,
+        "truncated": 0
+      },
+      "synthetic_routing": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.0006745241979850508,
+        "brier": 2.2384023137983568e-06,
+        "ece": 0.0006739069566386036,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "synthetic_tool_policy": {
+        "count": 100,
+        "accuracy": 1.0,
+        "nll": 0.0018859262255495977,
+        "brier": 5.226543506954482e-05,
+        "ece": 0.0018716470629821513,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "emotion": {
+        "count": 100,
+        "accuracy": 0.86,
+        "nll": 0.41024168049037946,
+        "brier": 0.1937529616138896,
+        "ece": 0.07797204407414766,
+        "high_confidence_errors": 2,
+        "truncated": 0
+      },
+      "absa": {
+        "count": 100,
+        "accuracy": 0.72,
+        "nll": 0.9490953542706708,
+        "brier": 0.46159515189849876,
+        "ece": 0.15923232199323,
+        "high_confidence_errors": 13,
+        "truncated": 0
+      },
+      "ag_news": {
+        "count": 100,
+        "accuracy": 0.95,
+        "nll": 0.27977563148892176,
+        "brier": 0.12058361666138787,
+        "ece": 0.08240844645564088,
+        "high_confidence_errors": 1,
+        "truncated": 0
+      },
+      "boolq": {
+        "count": 100,
+        "accuracy": 0.77,
+        "nll": 0.45987652162112347,
+        "brier": 0.30321833253248964,
+        "ece": 0.049024257786293,
+        "high_confidence_errors": 1,
+        "truncated": 0
+      },
+      "banking77": {
+        "count": 100,
+        "accuracy": 0.96,
+        "nll": 0.14612342269460699,
+        "brier": 0.06184546769084021,
+        "ece": 0.04576623317001047,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      },
+      "piqa": {
+        "count": 100,
+        "accuracy": 0.7,
+        "nll": 0.582661269527213,
+        "brier": 0.3979023183366213,
+        "ece": 0.06984791668806212,
+        "high_confidence_errors": 0,
+        "truncated": 0
+      }
+    }
+  },
+  "browser_gate": "Still requires actual WebGPU parity and latency checks"
+}

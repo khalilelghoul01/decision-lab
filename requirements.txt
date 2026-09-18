@@ -1,0 +1,6 @@
+transformers==5.17.0
+peft==0.21.0
+datasets==5.0.1
+accelerate==1.15.0
+matplotlib>=3.8,<4
+# Colab provides torch. For a fresh local environment, install torch>=2.8 first.

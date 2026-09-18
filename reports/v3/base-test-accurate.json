@@ -1,0 +1,162 @@
+{
+  "overall": {
+    "count": 3200,
+    "accuracy": 0.5803125,
+    "nll": 1.6516902121672923,
+    "brier": 0.5924015992720375,
+    "ece": 0.13208478222633885,
+    "high_confidence_errors": 230,
+    "truncated": 0
+  },
+  "macro_accuracy": 0.5803125,
+  "public_macro_accuracy": 0.60875,
+  "synthetic_macro_accuracy": 0.551875,
+  "tasks": {
+    "synthetic_routing": {
+      "count": 200,
+      "accuracy": 0.57,
+      "nll": 2.698941610952054,
+      "brier": 0.8365730384862519,
+      "ece": 0.5023994745219788,
+      "high_confidence_errors": 25,
+      "truncated": 0
+    },
+    "synthetic_verification": {
+      "count": 200,
+      "accuracy": 0.42,
+      "nll": 1.3377033814049566,
+      "brier": 0.7619858507465266,
+      "ece": 0.39092888032527995,
+      "high_confidence_errors": 43,
+      "truncated": 0
+    },
+    "ag_news": {
+      "count": 200,
+      "accuracy": 0.805,
+      "nll": 1.3367785202967752,
+      "brier": 0.4197168691055667,
+      "ece": 0.2197664695140236,
+      "high_confidence_errors": 18,
+      "truncated": 0
+    },
+    "synthetic_aspect": {
+      "count": 200,
+      "accuracy": 0.395,
+      "nll": 3.9847949022962883,
+      "brier": 0.8509580120399471,
+      "ece": 0.26828974337404266,
+      "high_confidence_errors": 34,
+      "truncated": 0
+    },
+    "synthetic_tool_policy": {
+      "count": 200,
+      "accuracy": 0.61,
+      "nll": 0.8890905539327685,
+      "brier": 0.537348010891234,
+      "ece": 0.1351488367348076,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "synthetic_risk": {
+      "count": 200,
+      "accuracy": 0.605,
+      "nll": 1.9441615447302707,
+      "brier": 0.6141550904904427,
+      "ece": 0.11205937659953813,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "synthetic_email": {
+      "count": 200,
+      "accuracy": 0.625,
+      "nll": 0.5263449066002153,
+      "brier": 0.36368644693789665,
+      "ece": 0.056146153110148866,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "emotion": {
+      "count": 200,
+      "accuracy": 0.435,
+      "nll": 3.4326075415277275,
+      "brier": 0.8612663929197748,
+      "ece": 0.30030654731278283,
+      "high_confidence_errors": 36,
+      "truncated": 0
+    },
+    "sst2": {
+      "count": 200,
+      "accuracy": 0.665,
+      "nll": 0.5347755306440284,
+      "brier": 0.3510669659327458,
+      "ece": 0.06104070117455278,
+      "high_confidence_errors": 4,
+      "truncated": 0
+    },
+    "boolq": {
+      "count": 200,
+      "accuracy": 0.63,
+      "nll": 0.6828169584336727,
+      "brier": 0.4898740372595819,
+      "ece": 0.12018413128913427,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "banking77": {
+      "count": 200,
+      "accuracy": 0.68,
+      "nll": 1.8733341888430188,
+      "brier": 0.49218517704728854,
+      "ece": 0.12379362459044771,
+      "high_confidence_errors": 18,
+      "truncated": 0
+    },
+    "synthetic_qualification": {
+      "count": 200,
+      "accuracy": 0.645,
+      "nll": 0.6931319364249982,
+      "brier": 0.4999847096413059,
+      "ece": 0.1438240183299767,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "absa": {
+      "count": 200,
+      "accuracy": 0.685,
+      "nll": 2.703419608837362,
+      "brier": 0.5717955714374916,
+      "ece": 0.2572051638687107,
+      "high_confidence_errors": 42,
+      "truncated": 0
+    },
+    "piqa": {
+      "count": 200,
+      "accuracy": 0.64,
+      "nll": 0.7566290672038395,
+      "brier": 0.48962771919240183,
+      "ece": 0.1285999709319497,
+      "high_confidence_errors": 4,
+      "truncated": 0
+    },
+    "snli": {
+      "count": 200,
+      "accuracy": 0.33,
+      "nll": 1.9224490547508801,
+      "brier": 0.7819481298615953,
+      "ece": 0.30327876086016836,
+      "high_confidence_errors": 6,
+      "truncated": 0
+    },
+    "synthetic_support": {
+      "count": 200,
+      "accuracy": 0.545,
+      "nll": 1.1100640877978205,
+      "brier": 0.556253566362549,
+      "ece": 0.049099128030574486,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    }
+  },
+  "orders": 2,
+  "temperature": 1.0
+}

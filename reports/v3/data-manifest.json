@@ -1,0 +1,130 @@
+{
+  "seed": 2026091803,
+  "sources": {
+    "boolq": [
+      "google/boolq",
+      "35b264d03638db9f4ce671b711558bf7ff0f80d5",
+      null
+    ],
+    "sst2": [
+      "stanfordnlp/sst2",
+      "8d51e7e4887a4caaa95b3fbebbf53c0490b58bbb",
+      null
+    ],
+    "ag_news": [
+      "fancyzhx/ag_news",
+      "eb185aade064a813bc0b7f42de02595523103ca4",
+      null
+    ],
+    "snli": [
+      "stanfordnlp/snli",
+      "cdb5c3d5eed6ead6e5a341c8e56e669bb666725b",
+      null
+    ],
+    "banking77": [
+      "mteb/banking77",
+      "18072d2685ea682290f7b8924d94c62acc19c0b2",
+      null
+    ],
+    "emotion": [
+      "dair-ai/emotion",
+      "cab853a1dbdf4c42c2b3ef2173804746df8825fe",
+      "split"
+    ],
+    "piqa": [
+      "nthngdy/piqa",
+      "467437b6dc793b01c07946dd3e800b9bd3199993",
+      null
+    ],
+    "absa": [
+      "tomaarsen/setfit-absa-semeval-restaurants",
+      "8885372fe73256f96bb60f65b550538ac5c26047",
+      null
+    ]
+  },
+  "synthetic": "v3_synthetic.py, split-specific templates/vocabulary; labels derived from stated facts",
+  "absa_test_split": "Context-group holdout from labeled train; the source test annotations are blank and never used",
+  "banking77_task": "Candidate selection among 4, 6, or 8 labels with two lexical hard negatives; not full 77-way accuracy",
+  "exact_prompt_duplicates_removed": {
+    "train": 39,
+    "dev": 0,
+    "calibration": 0,
+    "test": 0
+  },
+  "exclusion": "Normalized context SHA256; no V1/V2 previously seen examples in fresh test or calibration",
+  "selection": "Development macro accuracy; calibration fits temperature only; test opened after selection",
+  "counts": {
+    "train": {
+      "ag_news": 36000,
+      "snli": 50000,
+      "boolq": 7214,
+      "synthetic_risk": 4992,
+      "emotion": 15792,
+      "sst2": 24000,
+      "banking77": 9817,
+      "piqa": 14630,
+      "synthetic_routing": 4992,
+      "absa": 1644,
+      "synthetic_email": 4995,
+      "synthetic_aspect": 5000,
+      "synthetic_tool_policy": 4992,
+      "synthetic_support": 4991,
+      "synthetic_qualification": 4999,
+      "synthetic_verification": 5000
+    },
+    "dev": {
+      "emotion": 75,
+      "synthetic_qualification": 75,
+      "piqa": 75,
+      "synthetic_support": 75,
+      "synthetic_verification": 75,
+      "snli": 75,
+      "ag_news": 75,
+      "sst2": 75,
+      "synthetic_routing": 75,
+      "banking77": 75,
+      "boolq": 75,
+      "synthetic_risk": 75,
+      "absa": 75,
+      "synthetic_aspect": 75,
+      "synthetic_tool_policy": 75,
+      "synthetic_email": 75
+    },
+    "calibration": {
+      "synthetic_verification": 100,
+      "synthetic_qualification": 100,
+      "synthetic_email": 100,
+      "synthetic_support": 100,
+      "snli": 100,
+      "sst2": 100,
+      "synthetic_aspect": 100,
+      "synthetic_risk": 100,
+      "synthetic_routing": 100,
+      "synthetic_tool_policy": 100,
+      "emotion": 100,
+      "absa": 100,
+      "ag_news": 100,
+      "boolq": 100,
+      "banking77": 100,
+      "piqa": 100
+    },
+    "test": {
+      "synthetic_routing": 200,
+      "synthetic_verification": 200,
+      "ag_news": 200,
+      "synthetic_aspect": 200,
+      "synthetic_tool_policy": 200,
+      "synthetic_risk": 200,
+      "synthetic_email": 200,
+      "emotion": 200,
+      "sst2": 200,
+      "boolq": 200,
+      "banking77": 200,
+      "synthetic_qualification": 200,
+      "absa": 200,
+      "piqa": 200,
+      "snli": 200,
+      "synthetic_support": 200
+    }
+  }
+}

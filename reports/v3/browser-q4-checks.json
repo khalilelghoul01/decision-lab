@@ -1,0 +1,14 @@
+{
+  "backend":"webgpu", "model":"decision-lab-v3", "precision":"int4_weights_fp16_cache",
+  "tokenizer_exact":true,
+  "max_logit_delta_vs_python":0.04356670379638672,
+  "max_probability_delta_vs_python":0.0005523730102031318,
+  "cache_probability_delta":0,
+  "answers_match_python":true,
+  "benchmarks":[
+    {"context":"short","fields":4,"orders":2,"prefix_tokens":28,"max_input_tokens":83,"full_median_ms":210.32000000029802,"shared_median_ms":159.55499999970198,"speedup":1.318166149607915},
+    {"context":"long","fields":4,"orders":2,"prefix_tokens":301,"max_input_tokens":356,"full_median_ms":929.429999999702,"shared_median_ms":262.0650000013411,"speedup":3.5465628756031733}
+  ],
+  "passed":true,
+  "measurement":"Actual in-app browser on Apple M4; median of five warm runs; includes engine execution, excludes model download and tokenization"
+}

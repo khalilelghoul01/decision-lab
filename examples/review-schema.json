@@ -1,0 +1,10 @@
+{
+  "type": "object",
+  "properties": {
+    "sentiment": {"type": "string", "enum": ["Negative", "Positive"], "description": "What is the sentiment of this movie review?"},
+    "good_acting": {"type": "boolean", "description": "Was the acting good?"},
+    "topic": {"type": "string", "enum": ["Politics", "Sports", "Movies", "Business"], "description": "What is this text about?"}
+  },
+  "required": ["sentiment", "good_acting", "topic"],
+  "additionalProperties": false
+}

@@ -1,0 +1,18 @@
+{
+  "python_tests": {
+    "passed": 31,
+    "skipped": 1,
+    "skip_reason": "Historical V1/V2 data is intentionally not included"
+  },
+  "sdk_tests": {
+    "passed": 11
+  },
+  "browser_production_build": "passed",
+  "release_model_download_and_sha256": "passed for browser and native archives",
+  "native_smoke": {
+    "model": "decision-lab-v3",
+    "good_acting_p_yes": 0.002957300876746411
+  },
+  "static_browser_smoke": "SDK loaded on Python http.server without an AI backend; output verification recorded in SDK report",
+  "source_audit": "No generated weights, training texts, caches, private absolute paths or credential patterns in staged source"
+}

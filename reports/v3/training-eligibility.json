@@ -1,0 +1,8 @@
+{
+  "effective_after_step": 2800,
+  "reason": "Question and choices need more than 1000 tokens without context; preserve full choices and exclude from this small-model run",
+  "excluded_ids": [
+    "piqa:train:13223:v3",
+    "piqa:train:5528:v3"
+  ]
+}

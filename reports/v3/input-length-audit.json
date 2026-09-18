@@ -1,0 +1,33 @@
+{
+  "train": {
+    "records": 199058,
+    "max_question_options_tokens": 1184,
+    "excluded_from_1024_token_training": [
+      {
+        "id": "piqa:train:13223:v3",
+        "task": "piqa",
+        "question_options_tokens": 1061
+      },
+      {
+        "id": "piqa:train:5528:v3",
+        "task": "piqa",
+        "question_options_tokens": 1184
+      }
+    ]
+  },
+  "dev": {
+    "records": 1200,
+    "max_question_options_tokens": 530,
+    "excluded_from_1024_token_training": []
+  },
+  "calibration": {
+    "records": 1600,
+    "max_question_options_tokens": 373,
+    "excluded_from_1024_token_training": []
+  },
+  "test": {
+    "records": 3200,
+    "max_question_options_tokens": 442,
+    "excluded_from_1024_token_training": []
+  }
+}

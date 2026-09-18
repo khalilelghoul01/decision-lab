@@ -1,0 +1,10 @@
+{
+  "model":"decision-lab-v3", "backend":"webgpu", "precision":"fp16",
+  "configuration":"system_one_two_orders",
+  "suite_sha256":"e722ce60f4210a9ff034f8d5527d0be099ebea11984bea8261309bba16c40a1e",
+  "core":{"cases":84,"fields":240,"correct_fields":136,"field_accuracy":0.5666666666666667,"exact_cases":10,"valid_json_cases":84,"rejected_cases":0,"truncated":0,"native_agreement_fields":238,"high_confidence_errors":13,"max_probability_delta":0.07273672962423217},
+  "groups_correct_fields":{"support":[14,36],"model_routing":[13,24],"tool_guardrails":[21,36],"email_triage":[17,36],"retrieval_verification":[26,36],"document_risk":[22,36],"lead_qualification":[23,36]},
+  "stress":{"injection":{"cases":6,"fields":18,"correct_fields":11,"exact_cases":1,"valid_json_cases":6,"rejected_cases":0,"high_confidence_errors":2,"native_agreement_fields":18,"max_probability_delta":0.0886398816604097},"long_tail":{"cases":6,"rejected_cases":6,"truncated":0}},
+  "native_decision_differences":[{"id":"retrieval_verification-02","field":"verdict","browser":"insufficient","browser_probability":0.38597281774110526},{"id":"lead_qualification-08","field":"industry_fit","browser":true,"browser_probability":0.5053683076304746}],
+  "timing_note":"CPU compression validation ran concurrently; use browser-fp16-checks.json for isolated warmed latency measurements."
+}

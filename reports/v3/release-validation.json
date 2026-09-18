@@ -1,0 +1,155 @@
+{
+  "valid": true,
+  "records": 205058,
+  "splits": {
+    "train": {
+      "records": 199058,
+      "public": 159097,
+      "synthetic": 39961,
+      "tasks": {
+        "ag_news": 36000,
+        "snli": 50000,
+        "boolq": 7214,
+        "synthetic_risk": 4992,
+        "emotion": 15792,
+        "sst2": 24000,
+        "banking77": 9817,
+        "piqa": 14630,
+        "synthetic_routing": 4992,
+        "absa": 1644,
+        "synthetic_email": 4995,
+        "synthetic_aspect": 5000,
+        "synthetic_tool_policy": 4992,
+        "synthetic_support": 4991,
+        "synthetic_qualification": 4999,
+        "synthetic_verification": 5000
+      },
+      "sources": {
+        "fancyzhx/ag_news": 36000,
+        "stanfordnlp/snli": 50000,
+        "google/boolq": 7214,
+        "assistant-authored-rule-exercises": 39961,
+        "dair-ai/emotion": 15792,
+        "stanfordnlp/sst2": 24000,
+        "mteb/banking77": 9817,
+        "nthngdy/piqa": 14630,
+        "tomaarsen/setfit-absa-semeval-restaurants": 1644
+      },
+      "file_sha256": "aa965ee0eadff6bf4293ea893a0acbb91e54f5e04a639a50470a4ba95640dd92"
+    },
+    "dev": {
+      "records": 1200,
+      "public": 600,
+      "synthetic": 600,
+      "tasks": {
+        "emotion": 75,
+        "synthetic_qualification": 75,
+        "piqa": 75,
+        "synthetic_support": 75,
+        "synthetic_verification": 75,
+        "snli": 75,
+        "ag_news": 75,
+        "sst2": 75,
+        "synthetic_routing": 75,
+        "banking77": 75,
+        "boolq": 75,
+        "synthetic_risk": 75,
+        "absa": 75,
+        "synthetic_aspect": 75,
+        "synthetic_tool_policy": 75,
+        "synthetic_email": 75
+      },
+      "sources": {
+        "dair-ai/emotion": 75,
+        "assistant-authored-rule-exercises": 600,
+        "nthngdy/piqa": 75,
+        "stanfordnlp/snli": 75,
+        "fancyzhx/ag_news": 75,
+        "stanfordnlp/sst2": 75,
+        "mteb/banking77": 75,
+        "google/boolq": 75,
+        "tomaarsen/setfit-absa-semeval-restaurants": 75
+      },
+      "file_sha256": "08c090a6e7d79927b304dd170bea861f710074c2332fca9a04b592931eaec9b2"
+    },
+    "calibration": {
+      "records": 1600,
+      "synthetic": 800,
+      "public": 800,
+      "tasks": {
+        "synthetic_verification": 100,
+        "synthetic_qualification": 100,
+        "synthetic_email": 100,
+        "synthetic_support": 100,
+        "snli": 100,
+        "sst2": 100,
+        "synthetic_aspect": 100,
+        "synthetic_risk": 100,
+        "synthetic_routing": 100,
+        "synthetic_tool_policy": 100,
+        "emotion": 100,
+        "absa": 100,
+        "ag_news": 100,
+        "boolq": 100,
+        "banking77": 100,
+        "piqa": 100
+      },
+      "sources": {
+        "assistant-authored-rule-exercises": 800,
+        "stanfordnlp/snli": 100,
+        "stanfordnlp/sst2": 100,
+        "dair-ai/emotion": 100,
+        "tomaarsen/setfit-absa-semeval-restaurants": 100,
+        "fancyzhx/ag_news": 100,
+        "google/boolq": 100,
+        "mteb/banking77": 100,
+        "nthngdy/piqa": 100
+      },
+      "file_sha256": "cbcdd372b0429abf8bd612d3cbdd7b334e31ed23eca81fc44b358ee2ddb54bcb"
+    },
+    "test": {
+      "records": 3200,
+      "synthetic": 1600,
+      "public": 1600,
+      "tasks": {
+        "synthetic_routing": 200,
+        "synthetic_verification": 200,
+        "ag_news": 200,
+        "synthetic_aspect": 200,
+        "synthetic_tool_policy": 200,
+        "synthetic_risk": 200,
+        "synthetic_email": 200,
+        "emotion": 200,
+        "sst2": 200,
+        "boolq": 200,
+        "banking77": 200,
+        "synthetic_qualification": 200,
+        "absa": 200,
+        "piqa": 200,
+        "snli": 200,
+        "synthetic_support": 200
+      },
+      "sources": {
+        "assistant-authored-rule-exercises": 1600,
+        "fancyzhx/ag_news": 200,
+        "dair-ai/emotion": 200,
+        "stanfordnlp/sst2": 200,
+        "google/boolq": 200,
+        "mteb/banking77": 200,
+        "tomaarsen/setfit-absa-semeval-restaurants": 200,
+        "nthngdy/piqa": 200,
+        "stanfordnlp/snli": 200
+      },
+      "file_sha256": "744861527031d72676fb3e1df80752db468f6ac4bc184382d6071df622749af6"
+    }
+  },
+  "normalized_context_overlaps": {
+    "train/dev": 0,
+    "train/calibration": 0,
+    "train/test": 0,
+    "dev/calibration": 0,
+    "dev/test": 0,
+    "calibration/test": 0
+  },
+  "scope": "Structural, provenance and exact-overlap checks; not independent semantic relabeling or near-duplicate detection"
+}

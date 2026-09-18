@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Jev-shaped local request; runtime enforces loaded-model limits",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "model",
+    "state",
+    "questions"
+  ],
+  "properties": {
+    "model": {
+      "type": "string",
+      "enum": [
+        "decision-lab-v2",
+        "jev-latest",
+        "decision-lab-v3"
+      ]
+    },
+    "state": {
+      "oneOf": [
+        {
+          "type": "string"
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    },
+    "questions": {
+      "type": "object",
+      "minProperties": 1,
+      "maxProperties": 32,
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "instructions",
+              "criteria"
+            ],
+            "properties": {
+              "type": {
+                "const": "choice"
+              },
+              "instructions": {
+                "$ref": "#/$defs/text"
+              },
+              "criteria": {
+                "type": "object",
+                "minProperties": 2,
+                "maxProperties": 8,
+                "additionalProperties": {
+                  "anyOf": [
+                    {
+                      "$ref": "#/$defs/text"
+                    },
+                    {
+                      "type": "null"
+                    }
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "instructions",
+              "criteria"
+            ],
+            "properties": {
+              "type": {
+                "const": "score"
+              },
+              "instructions": {
+                "$ref": "#/$defs/text"
+              },
+              "criteria": {
+                "type": "array",
+                "minItems": 2,
+                "maxItems": 8,
+                "items": {
+                  "$ref": "#/$defs/text"
+                }
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "instructions"
+            ],
+            "properties": {
+              "type": {
+                "const": "noul"
+              },
+              "instructions": {
+                "$ref": "#/$defs/text"
+              },
+              "criteria": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "true",
+                  "false"
+                ],
+                "properties": {
+                  "true": {
+                    "type": "string"
+                  },
+                  "false": {
+                    "type": "string"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "$defs": {
+    "text": {
+      "oneOf": [
+        {
+          "type": "string",
+          "minLength": 1
+        },
+        {
+          "type": "object"
+        },
+        {
+          "type": "array"
+        }
+      ]
+    }
+  }
+}

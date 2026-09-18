@@ -1,0 +1,77 @@
+.sdk-loader {
+  align-items: stretch;
+  gap: 28px;
+}
+.loader-body {
+  flex: 1;
+  min-width: 0;
+}
+.loader-body input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  background: #101c15;
+  color: inherit;
+  border: 1px solid #38513c;
+  border-radius: 6px;
+  padding: 12px;
+  font: inherit;
+  margin: 10px 0 18px;
+}
+.loader-body strong {
+  display: block;
+  overflow-wrap: anywhere;
+}
+.loader-body progress {
+  display: block;
+  width: 100%;
+  height: 8px;
+  margin: 15px 0;
+  accent-color: #c3f483;
+}
+.loader-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.loader-actions button {
+  white-space: nowrap;
+}
+.loader-actions button:not(:first-child) {
+  background: transparent;
+  color: #c3d2c6;
+  border: 1px solid #38513c;
+}
+header a,
+footer a {
+  color: inherit;
+  text-decoration: none;
+}
+button:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+@media (max-width: 700px) {
+  .sdk-loader {
+    flex-direction: column;
+  }
+  .loader-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .loader-actions button {
+    padding: 12px 8px;
+  }
+  .workspace {
+    grid-template-columns: 1fr;
+  }
+}
+.workspace > div {
+  min-width: 0;
+}
+#sdk-response {
+  max-height: 700px;
+  overflow: auto;
+  color: #d5f6af;
+  font-size: 12px;
+}

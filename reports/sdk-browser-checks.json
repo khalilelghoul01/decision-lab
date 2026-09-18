@@ -1,0 +1,30 @@
+{
+  "backend": "WebGPU",
+  "model": "decision-lab-v3",
+  "artifact": "model-v3-q4",
+  "passed": true,
+  "negative_acting_p_yes": 0.016682283030317664,
+  "positive_acting_p_yes": 0.966939186125923,
+  "eight_choice_topic": "Movies",
+  "score": 1.7949695767327474,
+  "oversized_rejected": true,
+  "queue_and_cancellation": true,
+  "dispose_drains_queue": true,
+  "reload_cached_files": [
+    "tokenizer/tokenizer.json",
+    "tokenizer/tokenizer_config.json",
+    "tokenizer/chat_template.jinja",
+    "decision.onnx",
+    "decision.weights"
+  ],
+  "reload_same_answers": true,
+  "loading_cancellation": true,
+  "warm_four_field_median_ms": 144.5650000013411,
+  "warm_samples_ms": [
+    148.47999999672174,
+    144.5650000013411,
+    144.8449999988079,
+    142.99000000208616,
+    143.80000000074506
+  ]
+}

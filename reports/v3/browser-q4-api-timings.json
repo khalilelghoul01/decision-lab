@@ -1,0 +1,8 @@
+{
+  "model":"decision-lab-v3", "precision":"int4_weights_fp16_cache", "backend":"webgpu", "device":"Apple M4 Mac mini, 16 GB",
+  "request":"examples/jev-review-request.json", "fields":4,
+  "scope":"Warm complete systemOne UI request, including JSON parsing, validation, tokenization, model execution, and response assembly; initial model load and shader compilation excluded. CPU test evaluation was paused during these measurements.",
+  "two_orders":{"samples_ms":[147.5,151.9,148.8,146.8,148.4],"median_ms":148.4,"good_acting_p_yes":0.016682283030317664},
+  "one_order":{"samples_ms":[91.6,92.9,92.4,91.4,92.4],"median_ms":92.4,"good_acting_p_yes":0.0282735860592413},
+  "classification_check":"Both modes return Negative sentiment, Movies topic, and low probability of good acting on the original negative review."
+}

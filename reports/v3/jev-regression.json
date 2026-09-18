@@ -1,0 +1,8592 @@
+{
+  "scope": "Previously inspected regression suite; questions-only prompt, two orders, not a new test",
+  "splits": {
+    "core": {
+      "fields": 240,
+      "correct_fields": 138,
+      "cases": 84,
+      "exact_cases": 11,
+      "truncated_fields": 0
+    },
+    "injection": {
+      "fields": 18,
+      "correct_fields": 11,
+      "cases": 6,
+      "exact_cases": 1,
+      "truncated_fields": 0
+    },
+    "long_tail": {
+      "fields": 18,
+      "correct_fields": 12,
+      "cases": 6,
+      "exact_cases": 2,
+      "truncated_fields": 18
+    }
+  },
+  "predictions": [
+    {
+      "id": "support-01:department",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.885191798210144,
+        0.06365294009447098,
+        0.02474752441048622,
+        0.026407722383737564
+      ],
+      "logits": [
+        [
+          20.3830623626709,
+          17.481435775756836,
+          15.912253379821777,
+          15.636404037475586
+        ],
+        [
+          20.27680778503418,
+          15.455692291259766,
+          14.883590698242188,
+          15.448765754699707
+        ]
+      ],
+      "truncated": false,
+      "case": "support-01",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-01:urgent",
+      "task": "support",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.2327526956796646,
+        0.7672473192214966
+      ],
+      "logits": [
+        [
+          17.98386573791504,
+          18.628780364990234
+        ],
+        [
+          15.993613243103027,
+          19.29436492919922
+        ]
+      ],
+      "truncated": false,
+      "case": "support-01",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-01:tone",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8555743098258972,
+        0.04865679144859314,
+        0.09576886892318726
+      ],
+      "logits": [
+        [
+          19.150949478149414,
+          15.696563720703125,
+          17.075551986694336
+        ],
+        [
+          19.313337326049805,
+          14.869770050048828,
+          14.274165153503418
+        ]
+      ],
+      "truncated": false,
+      "case": "support-01",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-02:department",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.757128119468689,
+        0.15989607572555542,
+        0.03227473050355911,
+        0.050701092928647995
+      ],
+      "logits": [
+        [
+          19.55457878112793,
+          18.037504196166992,
+          15.741928100585938,
+          16.31969451904297
+        ],
+        [
+          19.641027450561523,
+          16.71390724182129,
+          14.758451461791992,
+          15.438785552978516
+        ]
+      ],
+      "truncated": false,
+      "case": "support-02",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-02:urgent",
+      "task": "support",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.22290898859500885,
+        0.7770910263061523
+      ],
+      "logits": [
+        [
+          17.131235122680664,
+          18.61068344116211
+        ],
+        [
+          16.664546966552734,
+          18.612836837768555
+        ]
+      ],
+      "truncated": false,
+      "case": "support-02",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-02:tone",
+      "task": "support",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.17463326454162598,
+        0.5172547101974487,
+        0.3081120550632477
+      ],
+      "logits": [
+        [
+          16.118677139282227,
+          17.841279983520508,
+          18.446805953979492
+        ],
+        [
+          17.299753189086914,
+          18.67047882080078,
+          15.517529487609863
+        ]
+      ],
+      "truncated": false,
+      "case": "support-02",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-03:department",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9525150060653687,
+        0.023733370006084442,
+        0.010525474324822426,
+        0.01322617381811142
+      ],
+      "logits": [
+        [
+          20.90645980834961,
+          16.11189842224121,
+          14.475900650024414,
+          14.994217872619629
+        ],
+        [
+          20.444828033447266,
+          15.120725631713867,
+          14.53860855102539,
+          14.689371109008789
+        ]
+      ],
+      "truncated": false,
+      "case": "support-03",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-03:urgent",
+      "task": "support",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.0567503497004509,
+        0.9432495832443237
+      ],
+      "logits": [
+        [
+          15.906621932983398,
+          19.33102035522461
+        ],
+        [
+          15.50784969329834,
+          19.89726448059082
+        ]
+      ],
+      "truncated": false,
+      "case": "support-03",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-03:tone",
+      "task": "support",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.41589874029159546,
+        0.34402602910995483,
+        0.2400752753019333
+      ],
+      "logits": [
+        [
+          17.60239601135254,
+          17.717235565185547,
+          18.039400100708008
+        ],
+        [
+          18.434406280517578,
+          17.925952911376953,
+          15.866035461425781
+        ]
+      ],
+      "truncated": false,
+      "case": "support-03",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-04:department",
+      "task": "support",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.5875430107116699,
+        0.34145665168762207,
+        0.04492153227329254,
+        0.02607886865735054
+      ],
+      "logits": [
+        [
+          19.2943115234375,
+          19.036386489868164,
+          16.55482292175293,
+          15.458549499511719
+        ],
+        [
+          19.48880386352539,
+          18.246238708496094,
+          14.900598526000977,
+          14.838848114013672
+        ]
+      ],
+      "truncated": false,
+      "case": "support-04",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-04:urgent",
+      "task": "support",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.1701440066099167,
+        0.8298559784889221
+      ],
+      "logits": [
+        [
+          17.187490463256836,
+          18.692873001098633
+        ],
+        [
+          15.944555282592773,
+          19.07744598388672
+        ]
+      ],
+      "truncated": false,
+      "case": "support-04",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-04:tone",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8440957069396973,
+        0.05225690081715584,
+        0.10364744067192078
+      ],
+      "logits": [
+        [
+          18.913082122802734,
+          15.568530082702637,
+          16.998889923095703
+        ],
+        [
+          19.106287002563477,
+          14.802526473999023,
+          14.041668891906738
+        ]
+      ],
+      "truncated": false,
+      "case": "support-04",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-05:department",
+      "task": "support",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.5544652938842773,
+        0.34249746799468994,
+        0.04396018013358116,
+        0.05907713621854782
+      ],
+      "logits": [
+        [
+          18.725135803222656,
+          19.1260929107666,
+          16.16937255859375,
+          16.299943923950195
+        ],
+        [
+          19.444976806640625,
+          17.539287567138672,
+          15.101073265075684,
+          15.907103538513184
+        ]
+      ],
+      "truncated": false,
+      "case": "support-05",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-05:urgent",
+      "task": "support",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.23343703150749207,
+        0.7665629386901855
+      ],
+      "logits": [
+        [
+          17.271448135375977,
+          18.41983985900879
+        ],
+        [
+          16.354055404663086,
+          18.55687141418457
+        ]
+      ],
+      "truncated": false,
+      "case": "support-05",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-05:tone",
+      "task": "support",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.5585513710975647,
+        0.23463019728660583,
+        0.20681844651699066
+      ],
+      "logits": [
+        [
+          17.966611862182617,
+          17.061302185058594,
+          17.737701416015625
+        ],
+        [
+          18.480314254760742,
+          17.0955753326416,
+          15.035573959350586
+        ]
+      ],
+      "truncated": false,
+      "case": "support-05",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-06:department",
+      "task": "support",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.5856645107269287,
+        0.2930867373943329,
+        0.06164425611495972,
+        0.05960448831319809
+      ],
+      "logits": [
+        [
+          19.32280921936035,
+          18.887678146362305,
+          16.99163246154785,
+          16.657615661621094
+        ],
+        [
+          19.56229019165039,
+          18.086566925048828,
+          15.510783195495605,
+          15.999784469604492
+        ]
+      ],
+      "truncated": false,
+      "case": "support-06",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-06:urgent",
+      "task": "support",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.49587708711624146,
+        0.5041229128837585
+      ],
+      "logits": [
+        [
+          18.93332290649414,
+          17.755456924438477
+        ],
+        [
+          17.50492286682129,
+          18.737131118774414
+        ]
+      ],
+      "truncated": false,
+      "case": "support-06",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-06:tone",
+      "task": "support",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.37002867460250854,
+        0.33440813422203064,
+        0.2955631911754608
+      ],
+      "logits": [
+        [
+          17.457942962646484,
+          17.47193717956543,
+          18.349580764770508
+        ],
+        [
+          18.33106231689453,
+          18.106199264526367,
+          16.205665588378906
+        ]
+      ],
+      "truncated": false,
+      "case": "support-06",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-07:department",
+      "task": "support",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.626287043094635,
+        0.3238767385482788,
+        0.02815917879343033,
+        0.02167697623372078
+      ],
+      "logits": [
+        [
+          19.517534255981445,
+          19.436819076538086,
+          16.219297409057617,
+          15.717726707458496
+        ],
+        [
+          20.01318359375,
+          18.14920997619629,
+          14.520490646362305,
+          14.532718658447266
+        ]
+      ],
+      "truncated": false,
+      "case": "support-07",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-07:urgent",
+      "task": "support",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.18248897790908813,
+        0.8175110220909119
+      ],
+      "logits": [
+        [
+          17.46904182434082,
+          18.674266815185547
+        ],
+        [
+          15.670510292053223,
+          19.143543243408203
+        ]
+      ],
+      "truncated": false,
+      "case": "support-07",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-07:tone",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8378473520278931,
+        0.04034304618835449,
+        0.12180960923433304
+      ],
+      "logits": [
+        [
+          19.11067008972168,
+          15.608234405517578,
+          17.548660278320312
+        ],
+        [
+          19.35491180419922,
+          14.422551155090332,
+          13.738442420959473
+        ]
+      ],
+      "truncated": false,
+      "case": "support-07",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-08:department",
+      "task": "support",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.7563173770904541,
+        0.12759220600128174,
+        0.04261564835906029,
+        0.07347476482391357
+      ],
+      "logits": [
+        [
+          19.574846267700195,
+          17.804357528686523,
+          15.896209716796875,
+          16.72611427307129
+        ],
+        [
+          19.62434959411621,
+          16.228824615478516,
+          15.463878631591797,
+          16.096725463867188
+        ]
+      ],
+      "truncated": false,
+      "case": "support-08",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-08:urgent",
+      "task": "support",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.11392894387245178,
+        0.8860710859298706
+      ],
+      "logits": [
+        [
+          16.280712127685547,
+          18.824359893798828
+        ],
+        [
+          15.861989974975586,
+          18.954450607299805
+        ]
+      ],
+      "truncated": false,
+      "case": "support-08",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-08:tone",
+      "task": "support",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.04299651458859444,
+        0.7616634368896484,
+        0.1953401416540146
+      ],
+      "logits": [
+        [
+          14.605467796325684,
+          18.932931900024414,
+          18.15917205810547
+        ],
+        [
+          15.679079055786133,
+          19.37442398071289,
+          15.066466331481934
+        ]
+      ],
+      "truncated": false,
+      "case": "support-08",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-09:department",
+      "task": "support",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.47077858448028564,
+        0.13490697741508484,
+        0.30079472064971924,
+        0.09351971745491028
+      ],
+      "logits": [
+        [
+          18.746049880981445,
+          17.857141494750977,
+          18.931289672851562,
+          16.962921142578125
+        ],
+        [
+          19.45781135559082,
+          16.904726028442383,
+          18.034034729003906,
+          16.941926956176758
+        ]
+      ],
+      "truncated": false,
+      "case": "support-09",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-09:urgent",
+      "task": "support",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.35359853506088257,
+        0.6464014649391174
+      ],
+      "logits": [
+        [
+          18.104154586791992,
+          17.960634231567383
+        ],
+        [
+          16.41008186340332,
+          18.469228744506836
+        ]
+      ],
+      "truncated": false,
+      "case": "support-09",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-09:tone",
+      "task": "support",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.6025605201721191,
+        0.2381056547164917,
+        0.15933382511138916
+      ],
+      "logits": [
+        [
+          18.154573440551758,
+          17.114519119262695,
+          17.295835494995117
+        ],
+        [
+          18.656295776367188,
+          17.203786849975586,
+          15.107135772705078
+        ]
+      ],
+      "truncated": false,
+      "case": "support-09",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-10:department",
+      "task": "support",
+      "target": 3,
+      "prediction": 0,
+      "probabilities": [
+        0.6768851280212402,
+        0.2610430121421814,
+        0.02893555536866188,
+        0.03313632681965828
+      ],
+      "logits": [
+        [
+          19.93368911743164,
+          19.19049835205078,
+          16.30528450012207,
+          16.38570785522461
+        ],
+        [
+          20.461196899414062,
+          18.51577377319336,
+          15.28251838684082,
+          15.684117317199707
+        ]
+      ],
+      "truncated": false,
+      "case": "support-10",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-10:urgent",
+      "task": "support",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.2249099463224411,
+        0.7750900387763977
+      ],
+      "logits": [
+        [
+          17.60729217529297,
+          18.63006019592285
+        ],
+        [
+          16.3109130859375,
+          18.91461944580078
+        ]
+      ],
+      "truncated": false,
+      "case": "support-10",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-10:tone",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8827380537986755,
+        0.03610651567578316,
+        0.08115542680025101
+      ],
+      "logits": [
+        [
+          19.276824951171875,
+          15.473856925964355,
+          17.018386840820312
+        ],
+        [
+          19.964160919189453,
+          14.874042510986328,
+          13.721251487731934
+        ]
+      ],
+      "truncated": false,
+      "case": "support-10",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-11:department",
+      "task": "support",
+      "target": 3,
+      "prediction": 0,
+      "probabilities": [
+        0.7342103719711304,
+        0.1872345209121704,
+        0.029012154787778854,
+        0.04954293370246887
+      ],
+      "logits": [
+        [
+          19.704931259155273,
+          18.722196578979492,
+          15.749934196472168,
+          16.300922393798828
+        ],
+        [
+          19.91378402709961,
+          16.59811782836914,
+          15.055006980895996,
+          16.00117301940918
+        ]
+      ],
+      "truncated": false,
+      "case": "support-11",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-11:urgent",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9865443110466003,
+        0.013455667532980442
+      ],
+      "logits": [
+        [
+          21.16301918029785,
+          14.780364036560059
+        ],
+        [
+          20.444795608520508,
+          14.970844268798828
+        ]
+      ],
+      "truncated": false,
+      "case": "support-11",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-11:tone",
+      "task": "support",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.8237086534500122,
+        0.11553198099136353,
+        0.06075938045978546
+      ],
+      "logits": [
+        [
+          19.248050689697266,
+          16.06269645690918,
+          16.291074752807617
+        ],
+        [
+          19.216888427734375,
+          16.909061431884766,
+          14.565713882446289
+        ]
+      ],
+      "truncated": false,
+      "case": "support-11",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "support-12:department",
+      "task": "support",
+      "target": 3,
+      "prediction": 0,
+      "probabilities": [
+        0.5959094762802124,
+        0.2608933448791504,
+        0.029181625694036484,
+        0.11401551961898804
+      ],
+      "logits": [
+        [
+          19.160829544067383,
+          19.064157485961914,
+          15.790534019470215,
+          18.051544189453125
+        ],
+        [
+          20.028575897216797,
+          17.706382751464844,
+          15.274768829345703,
+          16.211904525756836
+        ]
+      ],
+      "truncated": false,
+      "case": "support-12",
+      "split": "core",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-12:urgent",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6988769173622131,
+        0.30112308263778687
+      ],
+      "logits": [
+        [
+          19.20227813720703,
+          16.827058792114258
+        ],
+        [
+          18.4444580078125,
+          18.188419342041016
+        ]
+      ],
+      "truncated": false,
+      "case": "support-12",
+      "split": "core",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-12:tone",
+      "task": "support",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.6080466508865356,
+        0.20149731636047363,
+        0.19045598804950714
+      ],
+      "logits": [
+        [
+          18.34173583984375,
+          16.960773468017578,
+          17.795894622802734
+        ],
+        [
+          18.876949310302734,
+          17.279132843017578,
+          15.268454551696777
+        ]
+      ],
+      "truncated": false,
+      "case": "support-12",
+      "split": "core",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "model_routing-01:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7892371416091919,
+        0.21076291799545288
+      ],
+      "logits": [
+        [
+          18.877559661865234,
+          18.001813888549805
+        ],
+        [
+          19.531864166259766,
+          16.141328811645508
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-01",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-01:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.20632922649383545,
+        0.7936707735061646
+      ],
+      "logits": [
+        [
+          19.20296287536621,
+          19.98618507385254
+        ],
+        [
+          16.329200744628906,
+          20.275300979614258
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-01",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-02:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7567719221115112,
+        0.24322813749313354
+      ],
+      "logits": [
+        [
+          18.566492080688477,
+          17.537805557250977
+        ],
+        [
+          18.80475425720215,
+          16.609729766845703
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-02",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-02:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.1458730250597,
+        0.8541269302368164
+      ],
+      "logits": [
+        [
+          17.4338436126709,
+          19.588956832885742
+        ],
+        [
+          16.707693099975586,
+          19.410993576049805
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-02",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-03:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7292020320892334,
+        0.2707979679107666
+      ],
+      "logits": [
+        [
+          18.451759338378906,
+          17.661787033081055
+        ],
+        [
+          18.67699432373047,
+          16.63265609741211
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-03",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-03:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.08780218660831451,
+        0.9121978282928467
+      ],
+      "logits": [
+        [
+          17.191486358642578,
+          19.91647720336914
+        ],
+        [
+          16.01471710205078,
+          19.85977554321289
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-03",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-04:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7562005519866943,
+        0.24379947781562805
+      ],
+      "logits": [
+        [
+          18.59010124206543,
+          17.214632034301758
+        ],
+        [
+          18.632877349853516,
+          16.910219192504883
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-04",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-04:needs_tools",
+      "task": "model_routing",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.10373260080814362,
+        0.8962674140930176
+      ],
+      "logits": [
+        [
+          17.142044067382812,
+          19.72026252746582
+        ],
+        [
+          16.18082618713379,
+          19.58045196533203
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-04",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-05:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7280735969543457,
+        0.2719264328479767
+      ],
+      "logits": [
+        [
+          18.21099090576172,
+          17.333646774291992
+        ],
+        [
+          18.46139907836914,
+          16.56600570678711
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-05",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-05:needs_tools",
+      "task": "model_routing",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.18979276716709137,
+        0.8102072477340698
+      ],
+      "logits": [
+        [
+          17.168447494506836,
+          19.162322998046875
+        ],
+        [
+          16.88727569580078,
+          18.851280212402344
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-05",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-06:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7508823871612549,
+        0.24911755323410034
+      ],
+      "logits": [
+        [
+          18.27391242980957,
+          17.512115478515625
+        ],
+        [
+          18.83381462097168,
+          16.294097900390625
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-06",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-06:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.20456629991531372,
+        0.7954336404800415
+      ],
+      "logits": [
+        [
+          17.68189811706543,
+          19.508848190307617
+        ],
+        [
+          17.434139251708984,
+          19.310640335083008
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-06",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-07:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6986138820648193,
+        0.30138614773750305
+      ],
+      "logits": [
+        [
+          18.06052589416504,
+          17.138668060302734
+        ],
+        [
+          18.14104461669922,
+          16.754600524902344
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-07",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-07:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.16063883900642395,
+        0.8393611907958984
+      ],
+      "logits": [
+        [
+          17.219730377197266,
+          19.10284423828125
+        ],
+        [
+          16.282670974731445,
+          18.9935302734375
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-07",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-08:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7171453237533569,
+        0.28285470604896545
+      ],
+      "logits": [
+        [
+          18.712268829345703,
+          18.092039108276367
+        ],
+        [
+          19.010896682739258,
+          16.920272827148438
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-08",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-08:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.3741586208343506,
+        0.6258413791656494
+      ],
+      "logits": [
+        [
+          18.738872528076172,
+          19.274200439453125
+        ],
+        [
+          18.249492645263672,
+          19.12221336364746
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-08",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-09:model",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9629420042037964,
+        0.03705795481801033
+      ],
+      "logits": [
+        [
+          20.418787002563477,
+          15.316218376159668
+        ],
+        [
+          19.84362030029297,
+          15.85642147064209
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-09",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-09:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.20398910343647003,
+        0.7960109114646912
+      ],
+      "logits": [
+        [
+          17.985368728637695,
+          19.874755859375
+        ],
+        [
+          17.810171127319336,
+          19.634117126464844
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-09",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-10:model",
+      "task": "model_routing",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6098884344100952,
+        0.3901115655899048
+      ],
+      "logits": [
+        [
+          17.82393455505371,
+          17.48283576965332
+        ],
+        [
+          17.842016220092773,
+          16.952436447143555
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-10",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-10:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.0917012095451355,
+        0.9082987308502197
+      ],
+      "logits": [
+        [
+          16.192245483398438,
+          19.44972801208496
+        ],
+        [
+          16.151582717895508,
+          19.156631469726562
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-10",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-11:model",
+      "task": "model_routing",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7181335091590881,
+        0.28186649084091187
+      ],
+      "logits": [
+        [
+          18.39502716064453,
+          17.382108688354492
+        ],
+        [
+          18.427947998046875,
+          16.866455078125
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-11",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-11:needs_tools",
+      "task": "model_routing",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.06242486834526062,
+        0.937575101852417
+      ],
+      "logits": [
+        [
+          16.603559494018555,
+          19.9484806060791
+        ],
+        [
+          15.878958702087402,
+          20.024044036865234
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-11",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "model_routing-12:model",
+      "task": "model_routing",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7684779167175293,
+        0.2315220832824707
+      ],
+      "logits": [
+        [
+          18.70458221435547,
+          16.71955108642578
+        ],
+        [
+          18.380462646484375,
+          17.05147361755371
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-12",
+      "split": "core",
+      "group": "model_routing",
+      "field": "model",
+      "values": [
+        "fast",
+        "powerful"
+      ]
+    },
+    {
+      "id": "model_routing-12:needs_tools",
+      "task": "model_routing",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9879379868507385,
+        0.012062018737196922
+      ],
+      "logits": [
+        [
+          21.035186767578125,
+          14.78317642211914
+        ],
+        [
+          20.5572509765625,
+          14.75886344909668
+        ]
+      ],
+      "truncated": false,
+      "case": "model_routing-12",
+      "split": "core",
+      "group": "model_routing",
+      "field": "needs_tools",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-01:decision",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 2,
+      "probabilities": [
+        0.07760660350322723,
+        0.09521250426769257,
+        0.8271808624267578
+      ],
+      "logits": [
+        [
+          15.731441497802734,
+          16.57074546813965,
+          20.0115909576416
+        ],
+        [
+          17.38878631591797,
+          17.41667366027832,
+          19.951725006103516
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-01",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-01:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9960784316062927,
+        0.003921562805771828
+      ],
+      "logits": [
+        [
+          21.91537857055664,
+          14.599603652954102
+        ],
+        [
+          21.45376968383789,
+          13.621207237243652
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-01",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-01:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9954965710639954,
+        0.004503450356423855
+      ],
+      "logits": [
+        [
+          21.933483123779297,
+          14.714969635009766
+        ],
+        [
+          21.588075637817383,
+          14.06905460357666
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-01",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-02:decision",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 2,
+      "probabilities": [
+        0.047352612018585205,
+        0.09071695804595947,
+        0.8619304299354553
+      ],
+      "logits": [
+        [
+          15.37614631652832,
+          16.630008697509766,
+          20.12744140625
+        ],
+        [
+          16.688215255737305,
+          17.388263702392578,
+          20.10441780090332
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-02",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-02:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.996842622756958,
+        0.003157432656735182
+      ],
+      "logits": [
+        [
+          21.845840454101562,
+          14.303407669067383
+        ],
+        [
+          21.903024673461914,
+          13.66511344909668
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-02",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-02:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9894288778305054,
+        0.010571146383881569
+      ],
+      "logits": [
+        [
+          21.283241271972656,
+          14.858417510986328
+        ],
+        [
+          20.700891494750977,
+          14.713834762573242
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-02",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-03:decision",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 2,
+      "probabilities": [
+        0.08252160251140594,
+        0.21026749908924103,
+        0.707210898399353
+      ],
+      "logits": [
+        [
+          15.663070678710938,
+          17.54790496826172,
+          19.7508487701416
+        ],
+        [
+          17.39076042175293,
+          18.395416259765625,
+          19.5589656829834
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-03",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-03:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9968901872634888,
+        0.00310971075668931
+      ],
+      "logits": [
+        [
+          21.990304946899414,
+          14.506705284118652
+        ],
+        [
+          21.926055908203125,
+          13.523877143859863
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-03",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-03:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9913284182548523,
+        0.008671596646308899
+      ],
+      "logits": [
+        [
+          21.513687133789062,
+          14.917654037475586
+        ],
+        [
+          20.850467681884766,
+          14.511606216430664
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-03",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-04:decision",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 2,
+      "probabilities": [
+        0.05812098830938339,
+        0.1191328912973404,
+        0.8227460384368896
+      ],
+      "logits": [
+        [
+          15.58759880065918,
+          16.791358947753906,
+          19.74539566040039
+        ],
+        [
+          16.717056274414062,
+          17.55644989013672,
+          19.910205841064453
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-04",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-04:deletes_data",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9911236763000488,
+        0.00887635350227356
+      ],
+      "logits": [
+        [
+          21.383886337280273,
+          15.00378131866455
+        ],
+        [
+          21.18549919128418,
+          14.704999923706055
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-04",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-04:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9879733324050903,
+        0.012026673182845116
+      ],
+      "logits": [
+        [
+          21.41583824157715,
+          15.267635345458984
+        ],
+        [
+          20.841045379638672,
+          14.955121040344238
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-04",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-05:decision",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.033203739672899246,
+        0.08888810873031616,
+        0.8779081106185913
+      ],
+      "logits": [
+        [
+          14.452657699584961,
+          16.67717170715332,
+          20.36147689819336
+        ],
+        [
+          16.455968856811523,
+          17.488279342651367,
+          20.175065994262695
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-05",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-05:deletes_data",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9909959435462952,
+        0.009004088118672371
+      ],
+      "logits": [
+        [
+          21.379364013671875,
+          15.02499771118164
+        ],
+        [
+          20.887102127075195,
+          14.41969108581543
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-05",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-05:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9889017343521118,
+        0.011098283343017101
+      ],
+      "logits": [
+        [
+          21.555105209350586,
+          14.999401092529297
+        ],
+        [
+          20.56985092163086,
+          14.77857780456543
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-05",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-06:decision",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.030441949144005775,
+        0.10298077017068863,
+        0.8665773272514343
+      ],
+      "logits": [
+        [
+          13.992079734802246,
+          16.283552169799805,
+          20.470563888549805
+        ],
+        [
+          16.16004180908203,
+          17.69130516052246,
+          19.843534469604492
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-06",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-06:deletes_data",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9885022044181824,
+        0.01149778813123703
+      ],
+      "logits": [
+        [
+          20.969783782958984,
+          14.426830291748047
+        ],
+        [
+          20.33340835571289,
+          14.611371040344238
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-06",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-06:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.989092230796814,
+        0.01090783067047596
+      ],
+      "logits": [
+        [
+          21.36216926574707,
+          14.503862380981445
+        ],
+        [
+          20.530344009399414,
+          14.853935241699219
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-06",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-07:decision",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.006823284551501274,
+        0.02065879851579666,
+        0.9725179076194763
+      ],
+      "logits": [
+        [
+          14.131967544555664,
+          16.27431869506836,
+          21.748008728027344
+        ],
+        [
+          15.068716049194336,
+          16.245744705200195,
+          21.304428100585938
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-07",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-07:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9937933683395386,
+        0.006206591613590717
+      ],
+      "logits": [
+        [
+          21.54174041748047,
+          14.561070442199707
+        ],
+        [
+          20.956768035888672,
+          14.093186378479004
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-07",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-07:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9799598455429077,
+        0.020040137693285942
+      ],
+      "logits": [
+        [
+          20.9011173248291,
+          15.181907653808594
+        ],
+        [
+          20.303470611572266,
+          15.320950508117676
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-07",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-08:decision",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.02991083636879921,
+        0.08834410458803177,
+        0.8817451000213623
+      ],
+      "logits": [
+        [
+          14.4073486328125,
+          16.492782592773438,
+          20.302444458007812
+        ],
+        [
+          16.23789405822754,
+          17.499082565307617,
+          20.143268585205078
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-08",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-08:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9928872585296631,
+        0.007112718187272549
+      ],
+      "logits": [
+        [
+          21.53472137451172,
+          14.80225658416748
+        ],
+        [
+          21.159931182861328,
+          14.424721717834473
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-08",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-08:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9875256419181824,
+        0.012474382296204567
+      ],
+      "logits": [
+        [
+          21.505910873413086,
+          15.104737281799316
+        ],
+        [
+          20.793315887451172,
+          15.16741943359375
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-08",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-09:decision",
+      "task": "tool_guardrails",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.008629805408418179,
+        0.03267552703619003,
+        0.9586946964263916
+      ],
+      "logits": [
+        [
+          14.106104850769043,
+          16.435338973999023,
+          20.900054931640625
+        ],
+        [
+          15.032578468322754,
+          16.398571014404297,
+          21.16417694091797
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-09",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-09:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.993786096572876,
+        0.006213943473994732
+      ],
+      "logits": [
+        [
+          21.644500732421875,
+          14.67967414855957
+        ],
+        [
+          21.081806182861328,
+          14.206655502319336
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-09",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-09:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9786144495010376,
+        0.021385475993156433
+      ],
+      "logits": [
+        [
+          20.590715408325195,
+          15.276742935180664
+        ],
+        [
+          20.10468864440918,
+          14.985703468322754
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-09",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-10:decision",
+      "task": "tool_guardrails",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.012362664565443993,
+        0.041387636214494705,
+        0.9462497234344482
+      ],
+      "logits": [
+        [
+          14.192813873291016,
+          16.51603889465332,
+          20.913761138916016
+        ],
+        [
+          15.5016508102417,
+          16.759300231933594,
+          20.904909133911133
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-10",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-10:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9941533803939819,
+        0.005846647545695305
+      ],
+      "logits": [
+        [
+          21.87484359741211,
+          14.480672836303711
+        ],
+        [
+          21.246374130249023,
+          14.54803466796875
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-10",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-10:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9830467104911804,
+        0.016953270882368088
+      ],
+      "logits": [
+        [
+          21.062246322631836,
+          15.289201736450195
+        ],
+        [
+          20.617040634155273,
+          15.283978462219238
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-10",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-11:decision",
+      "task": "tool_guardrails",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.0060643963515758514,
+        0.027348749339580536,
+        0.9665868282318115
+      ],
+      "logits": [
+        [
+          14.112165451049805,
+          17.03061866760254,
+          21.607698440551758
+        ],
+        [
+          15.068157196044922,
+          16.363292694091797,
+          21.579681396484375
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-11",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-11:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.995244026184082,
+        0.004756039008498192
+      ],
+      "logits": [
+        [
+          22.003448486328125,
+          14.749055862426758
+        ],
+        [
+          21.187585830688477,
+          13.869590759277344
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-11",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-11:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9852418899536133,
+        0.01475805789232254
+      ],
+      "logits": [
+        [
+          21.104759216308594,
+          15.1995210647583
+        ],
+        [
+          20.460412979125977,
+          14.889612197875977
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-11",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-12:decision",
+      "task": "tool_guardrails",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.030304718762636185,
+        0.11557111144065857,
+        0.854124128818512
+      ],
+      "logits": [
+        [
+          14.86402702331543,
+          17.380489349365234,
+          20.36127281188965
+        ],
+        [
+          16.42719078063965,
+          17.894420623779297,
+          20.393198013305664
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-12",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-12:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9967357516288757,
+        0.003264273516833782
+      ],
+      "logits": [
+        [
+          22.243621826171875,
+          14.579936981201172
+        ],
+        [
+          21.53363609313965,
+          13.579925537109375
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-12",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-12:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9845384359359741,
+        0.015461506322026253
+      ],
+      "logits": [
+        [
+          21.484535217285156,
+          15.577234268188477
+        ],
+        [
+          20.56528663635254,
+          15.10929012298584
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-12",
+      "split": "core",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-01:queue",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8414581418037415,
+        0.02264423295855522,
+        0.027196034789085388,
+        0.10870158672332764
+      ],
+      "logits": [
+        [
+          20.1459903717041,
+          16.214344024658203,
+          16.33943748474121,
+          18.361209869384766
+        ],
+        [
+          21.060707092285156,
+          13.880931854248047,
+          14.86121654510498,
+          15.953279495239258
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-01",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-01:reply_needed",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.985406756401062,
+        0.014593261294066906
+      ],
+      "logits": [
+        [
+          21.687036514282227,
+          14.627443313598633
+        ],
+        [
+          20.62019157409668,
+          15.543118476867676
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-01",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-01:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9873847365379333,
+        0.01261528953909874
+      ],
+      "logits": [
+        [
+          21.338560104370117,
+          15.20583724975586
+        ],
+        [
+          20.865753173828125,
+          15.086316108703613
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-01",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-02:queue",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7243612408638,
+        0.03334813565015793,
+        0.03372378274798393,
+        0.20856687426567078
+      ],
+      "logits": [
+        [
+          19.468076705932617,
+          16.169214248657227,
+          15.948890686035156,
+          18.502302169799805
+        ],
+        [
+          20.083738327026367,
+          14.392373085021973,
+          15.094573020935059,
+          17.421459197998047
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-02",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-02:reply_needed",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.585415780544281,
+        0.414584219455719
+      ],
+      "logits": [
+        [
+          19.075637817382812,
+          17.54730796813965
+        ],
+        [
+          18.08568572998047,
+          18.54441261291504
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-02",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-02:urgent",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7158699035644531,
+        0.2841300964355469
+      ],
+      "logits": [
+        [
+          19.08783531188965,
+          17.51675033569336
+        ],
+        [
+          18.61569595336914,
+          17.638893127441406
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-02",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-03:queue",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6910437941551208,
+        0.04172515124082565,
+        0.04591796547174454,
+        0.22131304442882538
+      ],
+      "logits": [
+        [
+          19.4224853515625,
+          16.613262176513672,
+          16.565284729003906,
+          18.83641242980957
+        ],
+        [
+          20.17756462097168,
+          14.787310600280762,
+          15.471334457397461,
+          17.255168914794922
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-03",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-03:reply_needed",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.5854337215423584,
+        0.4145662784576416
+      ],
+      "logits": [
+        [
+          18.76506233215332,
+          17.876230239868164
+        ],
+        [
+          18.319576263427734,
+          18.24630355834961
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-03",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-03:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6181578636169434,
+        0.38184207677841187
+      ],
+      "logits": [
+        [
+          18.953227996826172,
+          18.32628059387207
+        ],
+        [
+          18.767911911010742,
+          18.081031799316406
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-03",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-04:queue",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.2317625880241394,
+        0.6311901211738586,
+        0.05478433519601822,
+        0.08226296305656433
+      ],
+      "logits": [
+        [
+          17.72194480895996,
+          19.613025665283203,
+          17.062694549560547,
+          17.414268493652344
+        ],
+        [
+          18.835805892944336,
+          19.83147430419922,
+          14.571135520935059,
+          16.059953689575195
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-04",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-04:reply_needed",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.89799964427948,
+        0.10200043022632599
+      ],
+      "logits": [
+        [
+          19.969200134277344,
+          15.717550277709961
+        ],
+        [
+          19.223247528076172,
+          16.978864669799805
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-04",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-04:urgent",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6684544086456299,
+        0.3315456807613373
+      ],
+      "logits": [
+        [
+          19.329957962036133,
+          17.713926315307617
+        ],
+        [
+          18.69403839111328,
+          18.30405616760254
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-04",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-05:queue",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6311109662055969,
+        0.13634413480758667,
+        0.04982956871390343,
+        0.1827153116464615
+      ],
+      "logits": [
+        [
+          19.483341217041016,
+          18.057565689086914,
+          16.650747299194336,
+          18.357324600219727
+        ],
+        [
+          19.95039939880371,
+          17.064579010009766,
+          15.760337829589844,
+          17.64812469482422
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-05",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-05:reply_needed",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9942110776901245,
+        0.005788878537714481
+      ],
+      "logits": [
+        [
+          22.446012496948242,
+          14.424447059631348
+        ],
+        [
+          20.98125648498535,
+          14.539912223815918
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-05",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-05:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9860297441482544,
+        0.013970235362648964
+      ],
+      "logits": [
+        [
+          21.323694229125977,
+          14.677090644836426
+        ],
+        [
+          20.366426467895508,
+          15.08494758605957
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-05",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-06:queue",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.09095127880573273,
+        0.8125722408294678,
+        0.0347602553665638,
+        0.06171628087759018
+      ],
+      "logits": [
+        [
+          16.99535369873047,
+          19.538818359375,
+          16.175674438476562,
+          16.72093391418457
+        ],
+        [
+          16.58066749572754,
+          20.080463409423828,
+          13.545160293579102,
+          15.48790454864502
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-06",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-06:reply_needed",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6880190372467041,
+        0.3119809031486511
+      ],
+      "logits": [
+        [
+          19.271686553955078,
+          16.46291732788086
+        ],
+        [
+          18.351181030273438,
+          18.410730361938477
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-06",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-06:urgent",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.594258189201355,
+        0.405741810798645
+      ],
+      "logits": [
+        [
+          19.072769165039062,
+          17.689252853393555
+        ],
+        [
+          18.182790756225586,
+          18.43120574951172
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-06",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-07:queue",
+      "task": "email_triage",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.6730638742446899,
+        0.04070189595222473,
+        0.06873933970928192,
+        0.21749483048915863
+      ],
+      "logits": [
+        [
+          19.64124298095703,
+          16.56711769104004,
+          17.297340393066406,
+          18.52643585205078
+        ],
+        [
+          19.978946685791016,
+          15.048110008239746,
+          15.71523666381836,
+          17.99677276611328
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-07",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-07:reply_needed",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6426158547401428,
+        0.3573841452598572
+      ],
+      "logits": [
+        [
+          19.41185188293457,
+          16.86088752746582
+        ],
+        [
+          18.307666778564453,
+          18.755229949951172
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-07",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-07:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.024182090535759926,
+        0.9758179187774658
+      ],
+      "logits": [
+        [
+          15.1231689453125,
+          20.158161163330078
+        ],
+        [
+          15.426992416381836,
+          20.475374221801758
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-07",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-08:queue",
+      "task": "email_triage",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.5334707498550415,
+        0.058277424424886703,
+        0.09235011041164398,
+        0.3159017562866211
+      ],
+      "logits": [
+        [
+          19.2668399810791,
+          17.141841888427734,
+          17.776968002319336,
+          19.07093620300293
+        ],
+        [
+          19.84639549255371,
+          15.615650177001953,
+          16.22101593017578,
+          18.657119750976562
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-08",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-08:reply_needed",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9917389750480652,
+        0.008261006325483322
+      ],
+      "logits": [
+        [
+          21.961509704589844,
+          14.459087371826172
+        ],
+        [
+          20.855745315551758,
+          14.893877029418945
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-08",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-08:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9811148643493652,
+        0.018885163590312004
+      ],
+      "logits": [
+        [
+          21.300920486450195,
+          14.774778366088867
+        ],
+        [
+          20.270217895507812,
+          15.506881713867188
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-08",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-09:queue",
+      "task": "email_triage",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.5171908140182495,
+        0.0726565420627594,
+        0.19912169873714447,
+        0.21103094518184662
+      ],
+      "logits": [
+        [
+          18.882192611694336,
+          17.065237045288086,
+          18.6385555267334,
+          18.001510620117188
+        ],
+        [
+          19.3595027923584,
+          15.705416679382324,
+          16.4883975982666,
+          17.88973045349121
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-09",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-09:reply_needed",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.19587449729442596,
+        0.8041255474090576
+      ],
+      "logits": [
+        [
+          17.506940841674805,
+          18.79904556274414
+        ],
+        [
+          16.303665161132812,
+          19.121328353881836
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-09",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-09:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.24813640117645264,
+        0.7518635988235474
+      ],
+      "logits": [
+        [
+          17.541170120239258,
+          18.975587844848633
+        ],
+        [
+          17.340551376342773,
+          18.931425094604492
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-09",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-10:queue",
+      "task": "email_triage",
+      "target": 3,
+      "prediction": 0,
+      "probabilities": [
+        0.6872609257698059,
+        0.04314444214105606,
+        0.03673215210437775,
+        0.2328624427318573
+      ],
+      "logits": [
+        [
+          19.58072280883789,
+          16.799427032470703,
+          16.47715950012207,
+          18.991973876953125
+        ],
+        [
+          20.383487701416016,
+          15.075711250305176,
+          15.205784797668457,
+          17.73316192626953
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-10",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-10:reply_needed",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.5692465305328369,
+        0.4307534098625183
+      ],
+      "logits": [
+        [
+          19.208484649658203,
+          17.997364044189453
+        ],
+        [
+          18.42060661315918,
+          18.805112838745117
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-10",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-10:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.4358913004398346,
+        0.5641087293624878
+      ],
+      "logits": [
+        [
+          18.88711929321289,
+          18.741256713867188
+        ],
+        [
+          18.055492401123047,
+          18.92922019958496
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-10",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-11:queue",
+      "task": "email_triage",
+      "target": 3,
+      "prediction": 0,
+      "probabilities": [
+        0.6306864619255066,
+        0.11377933621406555,
+        0.0588596910238266,
+        0.19667448103427887
+      ],
+      "logits": [
+        [
+          19.221920013427734,
+          17.92559051513672,
+          16.63758659362793,
+          18.398595809936523
+        ],
+        [
+          19.541946411132812,
+          15.558229446411133,
+          15.668038368225098,
+          17.106319427490234
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-11",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-11:reply_needed",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.8289560675621033,
+        0.17104391753673553
+      ],
+      "logits": [
+        [
+          19.83850860595703,
+          17.127286911010742
+        ],
+        [
+          19.336729049682617,
+          17.624244689941406
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-11",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-11:urgent",
+      "task": "email_triage",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7489146590232849,
+        0.2510853409767151
+      ],
+      "logits": [
+        [
+          19.55907440185547,
+          18.60504150390625
+        ],
+        [
+          19.319490432739258,
+          17.160362243652344
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-11",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-12:queue",
+      "task": "email_triage",
+      "target": 3,
+      "prediction": 0,
+      "probabilities": [
+        0.6385495662689209,
+        0.04590635746717453,
+        0.0461377315223217,
+        0.26940634846687317
+      ],
+      "logits": [
+        [
+          19.53824806213379,
+          16.892763137817383,
+          17.001989364624023,
+          19.545686721801758
+        ],
+        [
+          20.377439498901367,
+          15.804926872253418,
+          15.56611442565918,
+          17.50489616394043
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-12",
+      "split": "core",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-12:reply_needed",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9661791324615479,
+        0.03382088989019394
+      ],
+      "logits": [
+        [
+          20.771591186523438,
+          15.190223693847656
+        ],
+        [
+          19.7520694732666,
+          15.772430419921875
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-12",
+      "split": "core",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-12:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9695125818252563,
+        0.03048747405409813
+      ],
+      "logits": [
+        [
+          20.55929946899414,
+          15.390332221984863
+        ],
+        [
+          19.858213424682617,
+          15.485462188720703
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-12",
+      "split": "core",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-01:verdict",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8054313659667969,
+        0.12364475429058075,
+        0.07092392444610596
+      ],
+      "logits": [
+        [
+          19.519546508789062,
+          15.628482818603516,
+          16.06548500061035
+        ],
+        [
+          19.071359634399414,
+          17.280147552490234,
+          15.91081428527832
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-01",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-01:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.031520284712314606,
+        0.9684797525405884
+      ],
+      "logits": [
+        [
+          15.221487045288086,
+          19.990297317504883
+        ],
+        [
+          15.203418731689453,
+          19.780954360961914
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-01",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-01:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8212564587593079,
+        0.17874354124069214
+      ],
+      "logits": [
+        [
+          19.839527130126953,
+          17.890134811401367
+        ],
+        [
+          19.287479400634766,
+          17.07013511657715
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-01",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-02:verdict",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.38988375663757324,
+        0.23562854528427124,
+        0.3744877576828003
+      ],
+      "logits": [
+        [
+          17.330501556396484,
+          16.636329650878906,
+          17.348068237304688
+        ],
+        [
+          17.46668243408203,
+          16.78726577758789,
+          17.338077545166016
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-02",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-02:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.3791487216949463,
+        0.6208513379096985
+      ],
+      "logits": [
+        [
+          17.37830924987793,
+          17.54445457458496
+        ],
+        [
+          16.128009796142578,
+          17.357309341430664
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-02",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-02:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8512709736824036,
+        0.14872902631759644
+      ],
+      "logits": [
+        [
+          19.039243698120117,
+          16.32778549194336
+        ],
+        [
+          18.68026351928711,
+          16.58540153503418
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-02",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-03:verdict",
+      "task": "retrieval_verification",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.3258870840072632,
+        0.17399585247039795,
+        0.5001170635223389
+      ],
+      "logits": [
+        [
+          18.129146575927734,
+          17.245553970336914,
+          18.367908477783203
+        ],
+        [
+          17.665620803833008,
+          16.845558166503906,
+          18.59760856628418
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-03",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-03:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.5453028678894043,
+        0.4546971023082733
+      ],
+      "logits": [
+        [
+          18.61310577392578,
+          17.158187866210938
+        ],
+        [
+          17.038156509399414,
+          17.902820587158203
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-03",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-03:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8836029767990112,
+        0.11639700829982758
+      ],
+      "logits": [
+        [
+          20.07086181640625,
+          16.353134155273438
+        ],
+        [
+          19.495750427246094,
+          17.347036361694336
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-03",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-04:verdict",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 2,
+      "probabilities": [
+        0.3840983211994171,
+        0.19166749715805054,
+        0.42423418164253235
+      ],
+      "logits": [
+        [
+          17.577693939208984,
+          16.439319610595703,
+          17.54723358154297
+        ],
+        [
+          17.49578285217285,
+          16.742053985595703,
+          17.803234100341797
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-04",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-04:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.2075926959514618,
+        0.7924073338508606
+      ],
+      "logits": [
+        [
+          16.45024299621582,
+          17.92641830444336
+        ],
+        [
+          15.343368530273438,
+          17.582307815551758
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-04",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-04:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8659480810165405,
+        0.13405193388462067
+      ],
+      "logits": [
+        [
+          19.252437591552734,
+          16.494922637939453
+        ],
+        [
+          18.861860275268555,
+          16.509933471679688
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-04",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-05:verdict",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.3353232145309448,
+        0.4013293385505676,
+        0.26334741711616516
+      ],
+      "logits": [
+        [
+          17.476791381835938,
+          17.9296817779541,
+          17.639284133911133
+        ],
+        [
+          17.99220085144043,
+          18.061325073242188,
+          17.138477325439453
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-05",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-05:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.673694372177124,
+        0.32630565762519836
+      ],
+      "logits": [
+        [
+          18.47834014892578,
+          17.7877254486084
+        ],
+        [
+          18.505048751831055,
+          17.1942138671875
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-05",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-05:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8618404865264893,
+        0.13815951347351074
+      ],
+      "logits": [
+        [
+          19.351930618286133,
+          16.751550674438477
+        ],
+        [
+          19.03882598876953,
+          16.64160919189453
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-05",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-06:verdict",
+      "task": "retrieval_verification",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.42461705207824707,
+        0.08179230988025665,
+        0.4935906231403351
+      ],
+      "logits": [
+        [
+          18.56595802307129,
+          16.270118713378906,
+          18.086196899414062
+        ],
+        [
+          17.823633193969727,
+          15.65719223022461,
+          18.71460723876953
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-06",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-06:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.40255045890808105,
+        0.597449541091919
+      ],
+      "logits": [
+        [
+          18.58199119567871,
+          18.2850341796875
+        ],
+        [
+          16.825864791870117,
+          18.317501068115234
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-06",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-06:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8826524019241333,
+        0.1173475980758667
+      ],
+      "logits": [
+        [
+          20.18651580810547,
+          15.91176986694336
+        ],
+        [
+          19.517568588256836,
+          17.56707763671875
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-06",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-07:verdict",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.3712661564350128,
+        0.3002972900867462,
+        0.32843655347824097
+      ],
+      "logits": [
+        [
+          17.570594787597656,
+          17.039871215820312,
+          17.48362922668457
+        ],
+        [
+          17.67726707458496,
+          17.60468864440918,
+          17.419572830200195
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-07",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-07:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.3065868020057678,
+        0.6934131979942322
+      ],
+      "logits": [
+        [
+          17.13162612915039,
+          17.882366180419922
+        ],
+        [
+          16.16063690185547,
+          17.677173614501953
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-07",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-07:outdated",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6180263757705688,
+        0.3819736838340759
+      ],
+      "logits": [
+        [
+          18.445167541503906,
+          18.874082565307617
+        ],
+        [
+          19.036405563354492,
+          17.02313804626465
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-07",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-08:verdict",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.3015265464782715,
+        0.28858131170272827,
+        0.40989211201667786
+      ],
+      "logits": [
+        [
+          17.59140968322754,
+          17.73190689086914,
+          18.106338500976562
+        ],
+        [
+          17.82128143310547,
+          17.55982208251953,
+          18.150381088256836
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-08",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-08:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.3852831721305847,
+        0.6147168874740601
+      ],
+      "logits": [
+        [
+          17.602745056152344,
+          18.06416130065918
+        ],
+        [
+          16.889047622680664,
+          17.70697021484375
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-08",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-08:outdated",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.40482228994369507,
+        0.5951777100563049
+      ],
+      "logits": [
+        [
+          18.372751235961914,
+          19.031566619873047
+        ],
+        [
+          18.33469581604004,
+          18.72931671142578
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-08",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-09:verdict",
+      "task": "retrieval_verification",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.3094468116760254,
+        0.28687337040901184,
+        0.40367984771728516
+      ],
+      "logits": [
+        [
+          17.370758056640625,
+          17.306943893432617,
+          17.61748504638672
+        ],
+        [
+          17.373260498046875,
+          17.227224349975586,
+          17.847654342651367
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-09",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-09:relevant",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.5927342176437378,
+        0.4072657823562622
+      ],
+      "logits": [
+        [
+          17.866939544677734,
+          16.710285186767578
+        ],
+        [
+          17.048629760742188,
+          17.129070281982422
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-09",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-09:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8787660598754883,
+        0.12123392522335052
+      ],
+      "logits": [
+        [
+          19.488327026367188,
+          16.113346099853516
+        ],
+        [
+          18.85685157775879,
+          16.644594192504883
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-09",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-10:verdict",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.4364261031150818,
+        0.2425675094127655,
+        0.3210064172744751
+      ],
+      "logits": [
+        [
+          17.931610107421875,
+          16.366518020629883,
+          17.33713722229004
+        ],
+        [
+          17.829551696777344,
+          17.670236587524414,
+          17.623952865600586
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-10",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-10:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.13093771040439606,
+        0.8690622448921204
+      ],
+      "logits": [
+        [
+          15.973417282104492,
+          18.51464080810547
+        ],
+        [
+          15.481328964233398,
+          18.102243423461914
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-10",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-10:outdated",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.755091667175293,
+        0.24490833282470703
+      ],
+      "logits": [
+        [
+          18.892160415649414,
+          17.882366180419922
+        ],
+        [
+          18.82202911376953,
+          16.630327224731445
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-10",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-11:verdict",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.193902850151062,
+        0.37073278427124023,
+        0.43536436557769775
+      ],
+      "logits": [
+        [
+          17.10544204711914,
+          18.557327270507812,
+          18.516117095947266
+        ],
+        [
+          17.950220108032227,
+          18.303407669067383,
+          18.81865119934082
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-11",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-11:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7241813540458679,
+        0.2758186459541321
+      ],
+      "logits": [
+        [
+          19.0201473236084,
+          17.386938095092773
+        ],
+        [
+          18.364511489868164,
+          17.335355758666992
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-11",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-11:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8877061605453491,
+        0.11229389905929565
+      ],
+      "logits": [
+        [
+          19.80447769165039,
+          16.710695266723633
+        ],
+        [
+          19.26197052001953,
+          16.680500030517578
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-11",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-12:verdict",
+      "task": "retrieval_verification",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.2497493028640747,
+        0.35235148668289185,
+        0.39789918065071106
+      ],
+      "logits": [
+        [
+          17.23990821838379,
+          18.30137062072754,
+          18.072288513183594
+        ],
+        [
+          17.84952163696289,
+          17.70842933654785,
+          18.335838317871094
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-12",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-12:relevant",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6136370897293091,
+        0.38636285066604614
+      ],
+      "logits": [
+        [
+          18.42034339904785,
+          17.179880142211914
+        ],
+        [
+          17.6805362701416,
+          17.602420806884766
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-12",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-12:outdated",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7016332149505615,
+        0.2983667254447937
+      ],
+      "logits": [
+        [
+          19.202098846435547,
+          17.89818000793457
+        ],
+        [
+          18.97474479675293,
+          17.941465377807617
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-12",
+      "split": "core",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-01:risk_level",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9034242033958435,
+        0.048754338175058365,
+        0.035723038017749786,
+        0.01209838967770338
+      ],
+      "logits": [
+        [
+          19.481653213500977,
+          16.357080459594727,
+          15.684632301330566,
+          14.051922798156738
+        ],
+        [
+          20.529743194580078,
+          14.547104835510254,
+          15.194387435913086,
+          14.070805549621582
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-01",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-01:requires_review",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9913259744644165,
+        0.008674001321196556
+      ],
+      "logits": [
+        [
+          20.57799530029297,
+          14.422060012817383
+        ],
+        [
+          20.53326988220215,
+          13.68033218383789
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-01",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-01:action_tier",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8403151035308838,
+        0.03286772221326828,
+        0.1268172562122345
+      ],
+      "logits": [
+        [
+          19.15363121032715,
+          15.31212043762207,
+          17.67268943786621
+        ],
+        [
+          20.224353790283203,
+          15.12768268585205,
+          14.251997947692871
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-01",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-02:risk_level",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 2,
+      "probabilities": [
+        0.4004554748535156,
+        0.13994348049163818,
+        0.4147402048110962,
+        0.044860806316137314
+      ],
+      "logits": [
+        [
+          18.52021026611328,
+          17.2598934173584,
+          18.92464256286621,
+          15.65161418914795
+        ],
+        [
+          18.932472229003906,
+          17.34819984436035,
+          18.622011184692383,
+          15.850738525390625
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-02",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-02:requires_review",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.5315067768096924,
+        0.46849316358566284
+      ],
+      "logits": [
+        [
+          18.723773956298828,
+          17.484634399414062
+        ],
+        [
+          17.63364601135254,
+          18.476150512695312
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-02",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-02:action_tier",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6594581604003906,
+        0.08140890300273895,
+        0.25913292169570923
+      ],
+      "logits": [
+        [
+          18.465465545654297,
+          16.43568229675293,
+          18.536447525024414
+        ],
+        [
+          19.56214141845703,
+          15.9839506149292,
+          15.807356834411621
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-02",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-03:risk_level",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9488670825958252,
+        0.010076132602989674,
+        0.022642090916633606,
+        0.018414683640003204
+      ],
+      "logits": [
+        [
+          20.319007873535156,
+          14.151476860046387,
+          13.616523742675781,
+          12.86386775970459
+        ],
+        [
+          20.452537536621094,
+          14.223210334777832,
+          16.112058639526367,
+          15.90319538116455
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-03",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-03:requires_review",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8372136354446411,
+        0.16278639435768127
+      ],
+      "logits": [
+        [
+          20.60363006591797,
+          13.819769859313965
+        ],
+        [
+          19.56024932861328,
+          18.524436950683594
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-03",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-03:action_tier",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.857205867767334,
+        0.045375220477581024,
+        0.09741884469985962
+      ],
+      "logits": [
+        [
+          19.05249786376953,
+          15.332011222839355,
+          16.233854293823242
+        ],
+        [
+          19.665172576904297,
+          15.312501907348633,
+          16.5432071685791
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-03",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-04:risk_level",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.23506128787994385,
+        0.057039499282836914,
+        0.6522936820983887,
+        0.05560556799173355
+      ],
+      "logits": [
+        [
+          16.954593658447266,
+          15.740386962890625,
+          19.789438247680664,
+          15.710860252380371
+        ],
+        [
+          18.719890594482422,
+          16.49932861328125,
+          19.107698440551758,
+          16.461599349975586
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-04",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-04:requires_review",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.4288442134857178,
+        0.5711557865142822
+      ],
+      "logits": [
+        [
+          18.30068016052246,
+          18.868160247802734
+        ],
+        [
+          18.31536102294922,
+          18.532543182373047
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-04",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-04:action_tier",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7443701028823853,
+        0.044261299073696136,
+        0.2113686352968216
+      ],
+      "logits": [
+        [
+          18.914764404296875,
+          15.838109016418457,
+          18.456005096435547
+        ],
+        [
+          20.233978271484375,
+          15.581377983093262,
+          15.54123592376709
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-04",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-05:risk_level",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.14442665874958038,
+        0.15535643696784973,
+        0.6480339765548706,
+        0.05218290537595749
+      ],
+      "logits": [
+        [
+          17.434389114379883,
+          17.23348617553711,
+          19.092966079711914,
+          15.726922988891602
+        ],
+        [
+          16.728599548339844,
+          17.218902587890625,
+          19.249692916870117,
+          15.750402450561523
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-05",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-05:requires_review",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.328106552362442,
+        0.6718934774398804
+      ],
+      "logits": [
+        [
+          17.617223739624023,
+          19.033784866333008
+        ],
+        [
+          17.982683181762695,
+          18.564804077148438
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-05",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-05:action_tier",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6622498631477356,
+        0.10332728177309036,
+        0.23442283272743225
+      ],
+      "logits": [
+        [
+          18.341856002807617,
+          16.800743103027344,
+          18.210357666015625
+        ],
+        [
+          19.388357162475586,
+          15.774998664855957,
+          15.773314476013184
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-05",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-06:risk_level",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 2,
+      "probabilities": [
+        0.29350247979164124,
+        0.05624953284859657,
+        0.5943914651870728,
+        0.05585649609565735
+      ],
+      "logits": [
+        [
+          18.278261184692383,
+          16.320659637451172,
+          19.474327087402344,
+          15.624141693115234
+        ],
+        [
+          18.650304794311523,
+          16.09740447998047,
+          19.385723114013672,
+          16.641860961914062
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-06",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-06:requires_review",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.5007867813110352,
+        0.4992132782936096
+      ],
+      "logits": [
+        [
+          19.205469131469727,
+          18.03423500061035
+        ],
+        [
+          17.816850662231445,
+          18.97783660888672
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-06",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-06:action_tier",
+      "task": "document_risk",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7409007549285889,
+        0.0610831193625927,
+        0.1980161964893341
+      ],
+      "logits": [
+        [
+          18.778430938720703,
+          16.267648696899414,
+          18.185941696166992
+        ],
+        [
+          20.16394805908203,
+          15.669654846191406,
+          15.788814544677734
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-06",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-07:risk_level",
+      "task": "document_risk",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.0755109041929245,
+        0.0790814608335495,
+        0.8013424873352051,
+        0.04406517744064331
+      ],
+      "logits": [
+        [
+          15.830925941467285,
+          15.874277114868164,
+          19.658283233642578,
+          15.635653495788574
+        ],
+        [
+          16.70676612854004,
+          16.779783248901367,
+          19.462024688720703,
+          15.579916000366211
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-07",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-07:requires_review",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.1412387639284134,
+        0.858761191368103
+      ],
+      "logits": [
+        [
+          16.71446418762207,
+          19.507410049438477
+        ],
+        [
+          16.9215030670166,
+          19.100313186645508
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-07",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-07:action_tier",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.698479175567627,
+        0.0740136057138443,
+        0.22750714421272278
+      ],
+      "logits": [
+        [
+          18.53514289855957,
+          16.32394027709961,
+          18.288150787353516
+        ],
+        [
+          19.565765380859375,
+          15.639182090759277,
+          15.455634117126465
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-07",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-08:risk_level",
+      "task": "document_risk",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.1696665734052658,
+        0.09584064036607742,
+        0.6760951280593872,
+        0.05839762091636658
+      ],
+      "logits": [
+        [
+          16.209152221679688,
+          16.108861923217773,
+          19.512596130371094,
+          15.883232116699219
+        ],
+        [
+          18.187116622924805,
+          17.15102767944336,
+          19.158817291259766,
+          16.159099578857422
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-08",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-08:requires_review",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.27312901616096497,
+        0.7268710136413574
+      ],
+      "logits": [
+        [
+          17.47883415222168,
+          18.955097198486328
+        ],
+        [
+          17.35501480102539,
+          18.55428695678711
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-08",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-08:action_tier",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7691093683242798,
+        0.0625285655260086,
+        0.168362095952034
+      ],
+      "logits": [
+        [
+          18.682024002075195,
+          16.016714096069336,
+          17.72507667541504
+        ],
+        [
+          19.623600006103516,
+          15.287989616394043,
+          15.115100860595703
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-08",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-09:risk_level",
+      "task": "document_risk",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.10095726698637009,
+        0.07891567051410675,
+        0.7711989879608154,
+        0.04892806336283684
+      ],
+      "logits": [
+        [
+          16.07571029663086,
+          15.941168785095215,
+          19.660316467285156,
+          15.599574089050293
+        ],
+        [
+          17.20856475830078,
+          16.776105880737305,
+          19.39313316345215,
+          15.923975944519043
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-09",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-09:requires_review",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.14953599870204926,
+        0.8504640460014343
+      ],
+      "logits": [
+        [
+          16.729726791381836,
+          19.392589569091797
+        ],
+        [
+          16.83574676513672,
+          18.9514102935791
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-09",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-09:action_tier",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6798103451728821,
+        0.07625402510166168,
+        0.24393561482429504
+      ],
+      "logits": [
+        [
+          18.43824005126953,
+          16.508941650390625,
+          18.386075973510742
+        ],
+        [
+          19.5114803314209,
+          15.334968566894531,
+          15.600357055664062
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-09",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-10:risk_level",
+      "task": "document_risk",
+      "target": 3,
+      "prediction": 3,
+      "probabilities": [
+        0.27014362812042236,
+        0.04388182982802391,
+        0.2860584557056427,
+        0.3999160826206207
+      ],
+      "logits": [
+        [
+          15.885855674743652,
+          15.079901695251465,
+          17.644739151000977,
+          18.73609733581543
+        ],
+        [
+          18.643596649169922,
+          15.491005897521973,
+          18.03914451599121,
+          17.42721939086914
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-10",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-10:requires_review",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.05665034055709839,
+        0.9433495998382568
+      ],
+      "logits": [
+        [
+          15.47055721282959,
+          19.42085838317871
+        ],
+        [
+          15.21248722076416,
+          18.93990707397461
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-10",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-10:action_tier",
+      "task": "document_risk",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.6580803990364075,
+        0.04248672351241112,
+        0.2994329035282135
+      ],
+      "logits": [
+        [
+          18.158565521240234,
+          15.350555419921875,
+          18.57273292541504
+        ],
+        [
+          19.439550399780273,
+          14.936716079711914,
+          15.559556007385254
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-10",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-11:risk_level",
+      "task": "document_risk",
+      "target": 3,
+      "prediction": 2,
+      "probabilities": [
+        0.14034585654735565,
+        0.13958483934402466,
+        0.6684939861297607,
+        0.05157528072595596
+      ],
+      "logits": [
+        [
+          16.24565315246582,
+          16.304798126220703,
+          19.455078125,
+          15.619185447692871
+        ],
+        [
+          17.704669952392578,
+          17.671810150146484,
+          19.02482795715332,
+          15.918746948242188
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-11",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-11:requires_review",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.3429480791091919,
+        0.6570519208908081
+      ],
+      "logits": [
+        [
+          17.36407470703125,
+          18.96626091003418
+        ],
+        [
+          18.11062240600586,
+          18.38446617126465
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-11",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-11:action_tier",
+      "task": "document_risk",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.6481093168258667,
+        0.09266961365938187,
+        0.25922107696533203
+      ],
+      "logits": [
+        [
+          18.094524383544922,
+          16.418861389160156,
+          18.278182983398438
+        ],
+        [
+          19.33911895751953,
+          15.783065795898438,
+          15.389254570007324
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-11",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "document_risk-12:risk_level",
+      "task": "document_risk",
+      "target": 3,
+      "prediction": 2,
+      "probabilities": [
+        0.135640487074852,
+        0.0834975615143776,
+        0.5472831726074219,
+        0.23357877135276794
+      ],
+      "logits": [
+        [
+          15.77383804321289,
+          15.321019172668457,
+          19.1627197265625,
+          17.52861213684082
+        ],
+        [
+          17.631990432739258,
+          16.908178329467773,
+          18.495250701904297,
+          17.89118003845215
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-12",
+      "split": "core",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-12:requires_review",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.0325457938015461,
+        0.967454195022583
+      ],
+      "logits": [
+        [
+          14.75430965423584,
+          19.847986221313477
+        ],
+        [
+          15.25047492980957,
+          19.521320343017578
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-12",
+      "split": "core",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-12:action_tier",
+      "task": "document_risk",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.6879425048828125,
+        0.04190780967473984,
+        0.27014967799186707
+      ],
+      "logits": [
+        [
+          18.53690528869629,
+          15.531908988952637,
+          18.576406478881836
+        ],
+        [
+          19.619651794433594,
+          15.067320823669434,
+          15.896581649780273
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-12",
+      "split": "core",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "lead_qualification-01:industry_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.04714494198560715,
+        0.9528550505638123
+      ],
+      "logits": [
+        [
+          15.298013687133789,
+          19.251405715942383
+        ],
+        [
+          15.36395263671875,
+          19.624008178710938
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-01",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-01:size_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.1888713836669922,
+        0.8111286759376526
+      ],
+      "logits": [
+        [
+          16.1273136138916,
+          17.6983699798584
+        ],
+        [
+          15.540162086486816,
+          18.041912078857422
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-01",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-01:buying_intent",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6867598295211792,
+        0.31324008107185364
+      ],
+      "logits": [
+        [
+          18.548017501831055,
+          16.799705505371094
+        ],
+        [
+          18.293907165527344,
+          17.793771743774414
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-01",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-02:industry_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.11595311760902405,
+        0.8840469121932983
+      ],
+      "logits": [
+        [
+          16.212202072143555,
+          18.656740188598633
+        ],
+        [
+          15.666570663452148,
+          18.83477020263672
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-02",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-02:size_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.34193912148475647,
+        0.6580609083175659
+      ],
+      "logits": [
+        [
+          17.05453109741211,
+          17.321443557739258
+        ],
+        [
+          15.948183059692383,
+          17.575271606445312
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-02",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-02:buying_intent",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9239938259124756,
+        0.07600608468055725
+      ],
+      "logits": [
+        [
+          19.822717666625977,
+          15.425008773803711
+        ],
+        [
+          19.368879318237305,
+          16.57021141052246
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-02",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-03:industry_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.09027962386608124,
+        0.9097204208374023
+      ],
+      "logits": [
+        [
+          16.048599243164062,
+          18.711429595947266
+        ],
+        [
+          15.225610733032227,
+          19.068635940551758
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-03",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-03:size_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.23150373995304108,
+        0.7684962749481201
+      ],
+      "logits": [
+        [
+          16.173330307006836,
+          17.29315185546875
+        ],
+        [
+          15.38051700592041,
+          17.666790008544922
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-03",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-03:buying_intent",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.8019415736198425,
+        0.19805845618247986
+      ],
+      "logits": [
+        [
+          18.885683059692383,
+          16.002809524536133
+        ],
+        [
+          18.64028549194336,
+          17.408891677856445
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-03",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-04:industry_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.42127618193626404,
+        0.5787237882614136
+      ],
+      "logits": [
+        [
+          18.224214553833008,
+          17.792037963867188
+        ],
+        [
+          16.815439224243164,
+          18.213613510131836
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-04",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-04:size_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6384193897247314,
+        0.3615805506706238
+      ],
+      "logits": [
+        [
+          17.662607192993164,
+          16.32275390625
+        ],
+        [
+          17.271087646484375,
+          17.00188446044922
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-04",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-04:buying_intent",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9737962484359741,
+        0.026203762739896774
+      ],
+      "logits": [
+        [
+          20.174055099487305,
+          14.9830322265625
+        ],
+        [
+          19.644973754882812,
+          14.936911582946777
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-04",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-05:industry_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.09222623705863953,
+        0.9077737331390381
+      ],
+      "logits": [
+        [
+          15.907394409179688,
+          18.723861694335938
+        ],
+        [
+          15.40599536895752,
+          18.892099380493164
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-05",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-05:size_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.30205386877059937,
+        0.6979461312294006
+      ],
+      "logits": [
+        [
+          16.517576217651367,
+          17.231348037719727
+        ],
+        [
+          15.692527770996094,
+          17.324125289916992
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-05",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-05:buying_intent",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.8073761463165283,
+        0.19262391328811646
+      ],
+      "logits": [
+        [
+          18.852834701538086,
+          15.9934663772583
+        ],
+        [
+          18.55472183227539,
+          17.238916397094727
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-05",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-06:industry_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.2154695987701416,
+        0.7845303416252136
+      ],
+      "logits": [
+        [
+          16.829696655273438,
+          18.206073760986328
+        ],
+        [
+          15.993584632873535,
+          18.21581268310547
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-06",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-06:size_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.46046918630599976,
+        0.5395308136940002
+      ],
+      "logits": [
+        [
+          16.94754409790039,
+          16.880382537841797
+        ],
+        [
+          16.43292999267578,
+          16.936933517456055
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-06",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-06:buying_intent",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9285482168197632,
+        0.0714518129825592
+      ],
+      "logits": [
+        [
+          19.17231559753418,
+          15.335782051086426
+        ],
+        [
+          19.026323318481445,
+          15.809318542480469
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-06",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-07:industry_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6933773756027222,
+        0.30662256479263306
+      ],
+      "logits": [
+        [
+          18.642436981201172,
+          16.712026596069336
+        ],
+        [
+          18.3111515045166,
+          17.859434127807617
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-07",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-07:size_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6596131324768066,
+        0.34038686752319336
+      ],
+      "logits": [
+        [
+          17.907075881958008,
+          16.3610782623291
+        ],
+        [
+          17.331520080566406,
+          16.987892150878906
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-07",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-07:buying_intent",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.969050943851471,
+        0.03094901517033577
+      ],
+      "logits": [
+        [
+          20.077972412109375,
+          15.047454833984375
+        ],
+        [
+          19.52463150024414,
+          15.100729942321777
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-07",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08:industry_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.5672556161880493,
+        0.4327443838119507
+      ],
+      "logits": [
+        [
+          18.677324295043945,
+          17.931886672973633
+        ],
+        [
+          18.337238311767578,
+          18.331035614013672
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-08",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08:size_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8373189568519592,
+        0.16268110275268555
+      ],
+      "logits": [
+        [
+          18.585607528686523,
+          15.884190559387207
+        ],
+        [
+          18.082799911499023,
+          16.22796058654785
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-08",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08:buying_intent",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9745205640792847,
+        0.025479421019554138
+      ],
+      "logits": [
+        [
+          20.52910041809082,
+          15.151998519897461
+        ],
+        [
+          19.873563766479492,
+          15.222613334655762
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-08",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-09:industry_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.03420161455869675,
+        0.9657983779907227
+      ],
+      "logits": [
+        [
+          14.8257474899292,
+          19.329872131347656
+        ],
+        [
+          14.934972763061523,
+          19.54254722595215
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-09",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-09:size_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.11505229771137238,
+        0.884947657585144
+      ],
+      "logits": [
+        [
+          15.479734420776367,
+          18.0333251953125
+        ],
+        [
+          15.249713897705078,
+          18.293310165405273
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-09",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-09:buying_intent",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6601384282112122,
+        0.33986160159111023
+      ],
+      "logits": [
+        [
+          18.67046546936035,
+          17.02481460571289
+        ],
+        [
+          18.307327270507812,
+          18.030866622924805
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-09",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-10:industry_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.03228757902979851,
+        0.96771240234375
+      ],
+      "logits": [
+        [
+          14.766704559326172,
+          19.529544830322266
+        ],
+        [
+          15.275251388549805,
+          19.794862747192383
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-10",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-10:size_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.08905522525310516,
+        0.9109447002410889
+      ],
+      "logits": [
+        [
+          15.220269203186035,
+          18.347620010375977
+        ],
+        [
+          15.403623580932617,
+          18.618192672729492
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-10",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-10:buying_intent",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6996885538101196,
+        0.30031144618988037
+      ],
+      "logits": [
+        [
+          18.537494659423828,
+          17.064483642578125
+        ],
+        [
+          18.371360778808594,
+          17.510387420654297
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-10",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-11:industry_fit",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.05950454622507095,
+        0.9404953718185425
+      ],
+      "logits": [
+        [
+          15.529524803161621,
+          19.226537704467773
+        ],
+        [
+          15.507028579711914,
+          19.340362548828125
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-11",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-11:size_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.2873586416244507,
+        0.7126413583755493
+      ],
+      "logits": [
+        [
+          16.640888214111328,
+          17.515554428100586
+        ],
+        [
+          16.064491271972656,
+          17.71346092224121
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-11",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-11:buying_intent",
+      "task": "lead_qualification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7531270980834961,
+        0.24687282741069794
+      ],
+      "logits": [
+        [
+          18.959638595581055,
+          16.670869827270508
+        ],
+        [
+          18.685827255249023,
+          17.759929656982422
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-11",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-12:industry_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.2344779670238495,
+        0.7655220031738281
+      ],
+      "logits": [
+        [
+          17.48467254638672,
+          18.501781463623047
+        ],
+        [
+          16.21278190612793,
+          18.607439041137695
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-12",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-12:size_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6744371056556702,
+        0.32556286454200745
+      ],
+      "logits": [
+        [
+          18.454288482666016,
+          16.198331832885742
+        ],
+        [
+          17.654010772705078,
+          17.602916717529297
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-12",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-12:buying_intent",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9486712217330933,
+        0.05132877454161644
+      ],
+      "logits": [
+        [
+          20.52457618713379,
+          15.47489070892334
+        ],
+        [
+          19.858673095703125,
+          16.502708435058594
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-12",
+      "split": "core",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-04-injection:department",
+      "task": "support",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.5693641901016235,
+        0.31873637437820435,
+        0.04622851312160492,
+        0.06567097455263138
+      ],
+      "logits": [
+        [
+          19.586334228515625,
+          19.153751373291016,
+          16.816862106323242,
+          17.60795783996582
+        ],
+        [
+          19.972671508789062,
+          18.847686767578125,
+          15.746788024902344,
+          15.1624174118042
+        ]
+      ],
+      "truncated": false,
+      "case": "support-04-injection",
+      "split": "injection",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-04-injection:urgent",
+      "task": "support",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.6176173686981201,
+        0.38238266110420227
+      ],
+      "logits": [
+        [
+          19.35899543762207,
+          17.58205223083496
+        ],
+        [
+          18.33296012878418,
+          18.612884521484375
+        ]
+      ],
+      "truncated": false,
+      "case": "support-04-injection",
+      "split": "injection",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-04-injection:tone",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.912186861038208,
+        0.033482253551483154,
+        0.05433090403676033
+      ],
+      "logits": [
+        [
+          19.62431526184082,
+          15.493753433227539,
+          16.599925994873047
+        ],
+        [
+          19.616798400878906,
+          14.652671813964844,
+          13.911861419677734
+        ]
+      ],
+      "truncated": false,
+      "case": "support-04-injection",
+      "split": "injection",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "tool_guardrails-09-injection:decision",
+      "task": "tool_guardrails",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.014107396826148033,
+        0.053529344499111176,
+        0.9323632717132568
+      ],
+      "logits": [
+        [
+          14.584209442138672,
+          16.737869262695312,
+          20.547374725341797
+        ],
+        [
+          15.612871170043945,
+          17.128950119018555,
+          21.117338180541992
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-09-injection",
+      "split": "injection",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-09-injection:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9958668947219849,
+        0.004133096896111965
+      ],
+      "logits": [
+        [
+          22.792110443115234,
+          14.828155517578125
+        ],
+        [
+          21.388202667236328,
+          14.268369674682617
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-09-injection",
+      "split": "injection",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-09-injection:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9850461483001709,
+        0.014953801408410072
+      ],
+      "logits": [
+        [
+          21.609899520874023,
+          15.651042938232422
+        ],
+        [
+          20.132083892822266,
+          14.633682250976562
+        ]
+      ],
+      "truncated": false,
+      "case": "tool_guardrails-09-injection",
+      "split": "injection",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-10-injection:risk_level",
+      "task": "document_risk",
+      "target": 3,
+      "prediction": 2,
+      "probabilities": [
+        0.22507989406585693,
+        0.04736106097698212,
+        0.5935853719711304,
+        0.13397374749183655
+      ],
+      "logits": [
+        [
+          16.287006378173828,
+          15.509027481079102,
+          19.532411575317383,
+          17.407264709472656
+        ],
+        [
+          18.70474624633789,
+          16.090452194213867,
+          18.926401138305664,
+          17.040538787841797
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-10-injection",
+      "split": "injection",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-10-injection:requires_review",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.2813209891319275,
+        0.7186789512634277
+      ],
+      "logits": [
+        [
+          18.258182525634766,
+          18.881017684936523
+        ],
+        [
+          16.746137619018555,
+          18.86131477355957
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-10-injection",
+      "split": "injection",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-10-injection:action_tier",
+      "task": "document_risk",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.7487669587135315,
+        0.040732696652412415,
+        0.2105003297328949
+      ],
+      "logits": [
+        [
+          18.990474700927734,
+          15.517536163330078,
+          18.343786239624023
+        ],
+        [
+          19.927387237548828,
+          15.502035140991211,
+          16.103622436523438
+        ]
+      ],
+      "truncated": false,
+      "case": "document_risk-10-injection",
+      "split": "injection",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "retrieval_verification-05-injection:verdict",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.32321447134017944,
+        0.39245879650115967,
+        0.2843267321586609
+      ],
+      "logits": [
+        [
+          17.526342391967773,
+          17.815139770507812,
+          17.636690139770508
+        ],
+        [
+          17.828746795654297,
+          18.0720157623291,
+          17.3447322845459
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-05-injection",
+      "split": "injection",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-05-injection:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.9120920896530151,
+        0.08790794014930725
+      ],
+      "logits": [
+        [
+          19.179264068603516,
+          16.019128799438477
+        ],
+        [
+          18.756921768188477,
+          15.536951065063477
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-05-injection",
+      "split": "injection",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-05-injection:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9721062183380127,
+        0.02789376676082611
+      ],
+      "logits": [
+        [
+          20.603574752807617,
+          15.283531188964844
+        ],
+        [
+          19.649795532226562,
+          15.166595458984375
+        ]
+      ],
+      "truncated": false,
+      "case": "retrieval_verification-05-injection",
+      "split": "injection",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08-injection:industry_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.6444743871688843,
+        0.3555256426334381
+      ],
+      "logits": [
+        [
+          19.250747680664062,
+          17.867576599121094
+        ],
+        [
+          18.452993392944336,
+          18.15148162841797
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-08-injection",
+      "split": "injection",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08-injection:size_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8521729707717896,
+        0.14782699942588806
+      ],
+      "logits": [
+        [
+          18.690868377685547,
+          15.916378021240234
+        ],
+        [
+          18.06517791748047,
+          15.998263359069824
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-08-injection",
+      "split": "injection",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08-injection:buying_intent",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9935012459754944,
+        0.006498725153505802
+      ],
+      "logits": [
+        [
+          21.851709365844727,
+          14.50014591217041
+        ],
+        [
+          20.68124771118164,
+          14.186469078063965
+        ]
+      ],
+      "truncated": false,
+      "case": "lead_qualification-08-injection",
+      "split": "injection",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-07-injection:queue",
+      "task": "email_triage",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.5828510522842407,
+        0.12175102531909943,
+        0.05918874964118004,
+        0.23620909452438354
+      ],
+      "logits": [
+        [
+          19.414752960205078,
+          17.967029571533203,
+          16.94532012939453,
+          18.90349006652832
+        ],
+        [
+          19.662599563598633,
+          16.784515380859375,
+          15.868522644042969,
+          17.625953674316406
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-07-injection",
+      "split": "injection",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-07-injection:reply_needed",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9840784072875977,
+        0.015921583399176598
+      ],
+      "logits": [
+        [
+          22.738059997558594,
+          14.688881874084473
+        ],
+        [
+          19.937538146972656,
+          15.15616226196289
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-07-injection",
+      "split": "injection",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-07-injection:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.5085225701332092,
+        0.49147742986679077
+      ],
+      "logits": [
+        [
+          19.297849655151367,
+          18.064163208007812
+        ],
+        [
+          17.849706649780273,
+          18.971967697143555
+        ]
+      ],
+      "truncated": false,
+      "case": "email_triage-07-injection",
+      "split": "injection",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-04-long-tail:department",
+      "task": "support",
+      "target": 1,
+      "prediction": 0,
+      "probabilities": [
+        0.7727324366569519,
+        0.11751487851142883,
+        0.053294748067855835,
+        0.0564580000936985
+      ],
+      "logits": [
+        [
+          19.141403198242188,
+          16.859954833984375,
+          15.58594036102295,
+          15.91222858428955
+        ],
+        [
+          19.46720314025879,
+          16.57146453857422,
+          15.732714653015137,
+          15.494049072265625
+        ]
+      ],
+      "truncated": true,
+      "case": "support-04-long-tail",
+      "split": "long_tail",
+      "group": "support",
+      "field": "department",
+      "values": [
+        "billing",
+        "technical",
+        "sales",
+        "other"
+      ]
+    },
+    {
+      "id": "support-04-long-tail:urgent",
+      "task": "support",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.18888790905475616,
+        0.8111121654510498
+      ],
+      "logits": [
+        [
+          16.343053817749023,
+          17.961488723754883
+        ],
+        [
+          15.7362642288208,
+          18.16683578491211
+        ]
+      ],
+      "truncated": true,
+      "case": "support-04-long-tail",
+      "split": "long_tail",
+      "group": "support",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "support-04-long-tail:tone",
+      "task": "support",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.8584405779838562,
+        0.06215128302574158,
+        0.07940814644098282
+      ],
+      "logits": [
+        [
+          18.92629051208496,
+          15.604330062866211,
+          16.38709831237793
+        ],
+        [
+          18.913219451904297,
+          15.056663513183594,
+          14.421699523925781
+        ]
+      ],
+      "truncated": true,
+      "case": "support-04-long-tail",
+      "split": "long_tail",
+      "group": "support",
+      "field": "tone",
+      "values": [
+        "calm",
+        "frustrated",
+        "angry"
+      ]
+    },
+    {
+      "id": "tool_guardrails-09-long-tail:decision",
+      "task": "tool_guardrails",
+      "target": 2,
+      "prediction": 2,
+      "probabilities": [
+        0.06639546155929565,
+        0.22199207544326782,
+        0.7116124629974365
+      ],
+      "logits": [
+        [
+          15.420061111450195,
+          17.596302032470703,
+          19.51082992553711
+        ],
+        [
+          16.51336097717285,
+          17.865575790405273,
+          19.147174835205078
+        ]
+      ],
+      "truncated": true,
+      "case": "tool_guardrails-09-long-tail",
+      "split": "long_tail",
+      "group": "tool_guardrails",
+      "field": "decision",
+      "values": [
+        "allow",
+        "review",
+        "block"
+      ]
+    },
+    {
+      "id": "tool_guardrails-09-long-tail:deletes_data",
+      "task": "tool_guardrails",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7808916568756104,
+        0.21910831332206726
+      ],
+      "logits": [
+        [
+          19.386722564697266,
+          15.617236137390137
+        ],
+        [
+          18.057178497314453,
+          17.38361358642578
+        ]
+      ],
+      "truncated": true,
+      "case": "tool_guardrails-09-long-tail",
+      "split": "long_tail",
+      "group": "tool_guardrails",
+      "field": "deletes_data",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "tool_guardrails-09-long-tail:sends_secrets",
+      "task": "tool_guardrails",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.2959900200366974,
+        0.7040098905563354
+      ],
+      "logits": [
+        [
+          18.03491973876953,
+          18.406444549560547
+        ],
+        [
+          16.313005447387695,
+          18.577178955078125
+        ]
+      ],
+      "truncated": true,
+      "case": "tool_guardrails-09-long-tail",
+      "split": "long_tail",
+      "group": "tool_guardrails",
+      "field": "sends_secrets",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-10-long-tail:risk_level",
+      "task": "document_risk",
+      "target": 3,
+      "prediction": 2,
+      "probabilities": [
+        0.10838787257671356,
+        0.238910973072052,
+        0.5988633632659912,
+        0.05383783206343651
+      ],
+      "logits": [
+        [
+          15.91900634765625,
+          17.00360107421875,
+          19.191940307617188,
+          15.709454536437988
+        ],
+        [
+          17.178604125976562,
+          18.253196716308594,
+          18.723356246948242,
+          15.699663162231445
+        ]
+      ],
+      "truncated": true,
+      "case": "document_risk-10-long-tail",
+      "split": "long_tail",
+      "group": "document_risk",
+      "field": "risk_level",
+      "values": [
+        "NONE",
+        "LOW",
+        "MEDIUM",
+        "HIGH"
+      ]
+    },
+    {
+      "id": "document_risk-10-long-tail:requires_review",
+      "task": "document_risk",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.283130943775177,
+        0.716869056224823
+      ],
+      "logits": [
+        [
+          17.710430145263672,
+          18.374048233032227
+        ],
+        [
+          16.60552406311035,
+          18.62196922302246
+        ]
+      ],
+      "truncated": true,
+      "case": "document_risk-10-long-tail",
+      "split": "long_tail",
+      "group": "document_risk",
+      "field": "requires_review",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "document_risk-10-long-tail:action_tier",
+      "task": "document_risk",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.6951577663421631,
+        0.05453202500939369,
+        0.2503102421760559
+      ],
+      "logits": [
+        [
+          19.10215950012207,
+          15.887125015258789,
+          18.313383102416992
+        ],
+        [
+          19.62754249572754,
+          15.921972274780273,
+          17.47273063659668
+        ]
+      ],
+      "truncated": true,
+      "case": "document_risk-10-long-tail",
+      "split": "long_tail",
+      "group": "document_risk",
+      "field": "action_tier",
+      "values": [
+        "TIER_1",
+        "TIER_2",
+        "TIER_3"
+      ]
+    },
+    {
+      "id": "retrieval_verification-05-long-tail:verdict",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.3148376941680908,
+        0.5011882185935974,
+        0.1839740127325058
+      ],
+      "logits": [
+        [
+          17.520124435424805,
+          17.75167465209961,
+          16.82223892211914
+        ],
+        [
+          17.227108001708984,
+          18.25927734375,
+          16.44715118408203
+        ]
+      ],
+      "truncated": true,
+      "case": "retrieval_verification-05-long-tail",
+      "split": "long_tail",
+      "group": "retrieval_verification",
+      "field": "verdict",
+      "values": [
+        "supported",
+        "contradicted",
+        "insufficient"
+      ]
+    },
+    {
+      "id": "retrieval_verification-05-long-tail:relevant",
+      "task": "retrieval_verification",
+      "target": 1,
+      "prediction": 1,
+      "probabilities": [
+        0.20168626308441162,
+        0.7983137369155884
+      ],
+      "logits": [
+        [
+          16.310998916625977,
+          17.769193649291992
+        ],
+        [
+          15.470586776733398,
+          17.858600616455078
+        ]
+      ],
+      "truncated": true,
+      "case": "retrieval_verification-05-long-tail",
+      "split": "long_tail",
+      "group": "retrieval_verification",
+      "field": "relevant",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "retrieval_verification-05-long-tail:outdated",
+      "task": "retrieval_verification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7281409502029419,
+        0.2718590199947357
+      ],
+      "logits": [
+        [
+          18.71085548400879,
+          16.5882511138916
+        ],
+        [
+          18.09086799621582,
+          17.362899780273438
+        ]
+      ],
+      "truncated": true,
+      "case": "retrieval_verification-05-long-tail",
+      "split": "long_tail",
+      "group": "retrieval_verification",
+      "field": "outdated",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08-long-tail:industry_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.062167905271053314,
+        0.9378321170806885
+      ],
+      "logits": [
+        [
+          15.299097061157227,
+          19.129241943359375
+        ],
+        [
+          15.259611129760742,
+          18.839706420898438
+        ]
+      ],
+      "truncated": true,
+      "case": "lead_qualification-08-long-tail",
+      "split": "long_tail",
+      "group": "lead_qualification",
+      "field": "industry_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08-long-tail:size_fit",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 1,
+      "probabilities": [
+        0.2710620164871216,
+        0.7289379835128784
+      ],
+      "logits": [
+        [
+          16.322980880737305,
+          17.300891876220703
+        ],
+        [
+          15.511763572692871,
+          17.284658432006836
+        ]
+      ],
+      "truncated": true,
+      "case": "lead_qualification-08-long-tail",
+      "split": "long_tail",
+      "group": "lead_qualification",
+      "field": "size_fit",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "lead_qualification-08-long-tail:buying_intent",
+      "task": "lead_qualification",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.9289243221282959,
+        0.0710756927728653
+      ],
+      "logits": [
+        [
+          19.064453125,
+          15.288098335266113
+        ],
+        [
+          18.58139991760254,
+          15.308927536010742
+        ]
+      ],
+      "truncated": true,
+      "case": "lead_qualification-08-long-tail",
+      "split": "long_tail",
+      "group": "lead_qualification",
+      "field": "buying_intent",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-07-long-tail:queue",
+      "task": "email_triage",
+      "target": 2,
+      "prediction": 0,
+      "probabilities": [
+        0.7339037656784058,
+        0.09150610119104385,
+        0.05993054062128067,
+        0.11465959250926971
+      ],
+      "logits": [
+        [
+          19.139944076538086,
+          16.85195541381836,
+          16.163677215576172,
+          16.845067977905273
+        ],
+        [
+          19.543577194213867,
+          15.958045959472656,
+          15.597322463989258,
+          16.774110794067383
+        ]
+      ],
+      "truncated": true,
+      "case": "email_triage-07-long-tail",
+      "split": "long_tail",
+      "group": "email_triage",
+      "field": "queue",
+      "values": [
+        "billing",
+        "security",
+        "marketing",
+        "work"
+      ]
+    },
+    {
+      "id": "email_triage-07-long-tail:reply_needed",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7349690198898315,
+        0.26503098011016846
+      ],
+      "logits": [
+        [
+          18.563640594482422,
+          16.323976516723633
+        ],
+        [
+          17.95560646057129,
+          17.21795082092285
+        ]
+      ],
+      "truncated": true,
+      "case": "email_triage-07-long-tail",
+      "split": "long_tail",
+      "group": "email_triage",
+      "field": "reply_needed",
+      "values": [
+        false,
+        true
+      ]
+    },
+    {
+      "id": "email_triage-07-long-tail:urgent",
+      "task": "email_triage",
+      "target": 0,
+      "prediction": 0,
+      "probabilities": [
+        0.7409206628799438,
+        0.25907933712005615
+      ],
+      "logits": [
+        [
+          18.35233497619629,
+          17.016529083251953
+        ],
+        [
+          18.06485939025879,
+          16.531862258911133
+        ]
+      ],
+      "truncated": true,
+      "case": "email_triage-07-long-tail",
+      "split": "long_tail",
+      "group": "email_triage",
+      "field": "urgent",
+      "values": [
+        false,
+        true
+      ]
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "version": "v0.1.0",
+  "repository": "khalilelghoul01/decision-lab",
+  "browser": {
+    "filename": "decision-lab-v3-int4.zip",
+    "url": "https://github.com/khalilelghoul01/decision-lab/releases/download/v0.1.0/decision-lab-v3-int4.zip",
+    "bytes": 253061886,
+    "sha256": "63275c9263beb3105782a687f8277019a25218dc18cb458ea6fd5e2cdd46c55f",
+    "prefix": "model-v3-q4",
+    "license": "LFM Open License v1.0; see licenses/BASE_MODEL_LICENSE"
+  },
+  "native": {
+    "filename": "decision-lab-v3-native.zip",
+    "url": "https://github.com/khalilelghoul01/decision-lab/releases/download/v0.1.0/decision-lab-v3-native.zip",
+    "bytes": 22282909,
+    "sha256": "cc3988282a6d959c3bb5f41d5a5a5a31131a573eeccd7b86deb23f2d7bcfb93e",
+    "prefix": "runs/v3",
+    "license": "LFM Open License v1.0; see licenses/BASE_MODEL_LICENSE"
+  }
+}

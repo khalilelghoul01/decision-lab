@@ -1,0 +1,149 @@
+{
+  "sha256": "be3b54f8361922d94344f8accf106b9b52fb925322dd80588e81b104cd70877c",
+  "splits": {
+    "train": {
+      "records": 199058,
+      "public": 159097,
+      "synthetic": 39961,
+      "exact_duplicate_prompts": 0,
+      "invalid_labels": 0,
+      "tasks": {
+        "ag_news": 36000,
+        "snli": 50000,
+        "boolq": 7214,
+        "synthetic_risk": 4992,
+        "emotion": 15792,
+        "sst2": 24000,
+        "banking77": 9817,
+        "piqa": 14630,
+        "synthetic_routing": 4992,
+        "absa": 1644,
+        "synthetic_email": 4995,
+        "synthetic_aspect": 5000,
+        "synthetic_tool_policy": 4992,
+        "synthetic_support": 4991,
+        "synthetic_qualification": 4999,
+        "synthetic_verification": 5000
+      },
+      "option_counts": {
+        "4": 51868,
+        "3": 56507,
+        "2": 68319,
+        "6": 19119,
+        "8": 3245
+      },
+      "noul_yes": 15696,
+      "noul_no": 13993
+    },
+    "dev": {
+      "records": 1200,
+      "public": 600,
+      "synthetic": 600,
+      "exact_duplicate_prompts": 0,
+      "invalid_labels": 0,
+      "tasks": {
+        "emotion": 75,
+        "synthetic_qualification": 75,
+        "piqa": 75,
+        "synthetic_support": 75,
+        "synthetic_verification": 75,
+        "snli": 75,
+        "ag_news": 75,
+        "sst2": 75,
+        "synthetic_routing": 75,
+        "banking77": 75,
+        "boolq": 75,
+        "synthetic_risk": 75,
+        "absa": 75,
+        "synthetic_aspect": 75,
+        "synthetic_tool_policy": 75,
+        "synthetic_email": 75
+      },
+      "option_counts": {
+        "6": 104,
+        "2": 588,
+        "4": 322,
+        "3": 159,
+        "8": 27
+      },
+      "noul_yes": 221,
+      "noul_no": 217
+    },
+    "calibration": {
+      "records": 1600,
+      "public": 800,
+      "synthetic": 800,
+      "exact_duplicate_prompts": 0,
+      "invalid_labels": 0,
+      "tasks": {
+        "synthetic_verification": 100,
+        "synthetic_qualification": 100,
+        "synthetic_email": 100,
+        "synthetic_support": 100,
+        "snli": 100,
+        "sst2": 100,
+        "synthetic_aspect": 100,
+        "synthetic_risk": 100,
+        "synthetic_routing": 100,
+        "synthetic_tool_policy": 100,
+        "emotion": 100,
+        "absa": 100,
+        "ag_news": 100,
+        "boolq": 100,
+        "banking77": 100,
+        "piqa": 100
+      },
+      "option_counts": {
+        "2": 757,
+        "3": 230,
+        "4": 445,
+        "6": 131,
+        "8": 37
+      },
+      "noul_yes": 275,
+      "noul_no": 282
+    },
+    "test": {
+      "records": 3200,
+      "public": 1600,
+      "synthetic": 1600,
+      "exact_duplicate_prompts": 0,
+      "invalid_labels": 0,
+      "tasks": {
+        "synthetic_routing": 200,
+        "synthetic_verification": 200,
+        "ag_news": 200,
+        "synthetic_aspect": 200,
+        "synthetic_tool_policy": 200,
+        "synthetic_risk": 200,
+        "synthetic_email": 200,
+        "emotion": 200,
+        "sst2": 200,
+        "boolq": 200,
+        "banking77": 200,
+        "synthetic_qualification": 200,
+        "absa": 200,
+        "piqa": 200,
+        "snli": 200,
+        "synthetic_support": 200
+      },
+      "option_counts": {
+        "4": 904,
+        "2": 1515,
+        "3": 457,
+        "6": 255,
+        "8": 69
+      },
+      "noul_yes": 573,
+      "noul_no": 542
+    }
+  },
+  "leakage": {
+    "dev / train": 0,
+    "dev / test": 0,
+    "calibration / train": 0,
+    "calibration / dev": 0,
+    "calibration / test": 0,
+    "test / train": 0
+  }
+}

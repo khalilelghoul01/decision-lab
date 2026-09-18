@@ -1,0 +1,14 @@
+{
+  "python": "3.12.13",
+  "packages": {
+    "datasets": "5.0.1",
+    "numpy": "2.5.3",
+    "huggingface_hub": "1.32.0"
+  },
+  "source_sha256": {
+    "build_v3_data.py": "fd522856f653f66e02b9c479bce4ca40620b72d01179908fbb5ce5af447c3592",
+    "v3_synthetic.py": "48377bdae9537525ffd8acb5d6e0e0a8fb8b6b27a56b8d5cf199387ce9582dc6",
+    "decision_lab.py": "6e9bbb2ab7d060765985c6132842134b6c1cca05971b9333e79e3432bc9c2eb5",
+    "evals/v3-exclusion-contexts.json": "57987da9b876a02d50f5810c7a7edf6522fdab9a45e36deb966c1a8a46f0600e"
+  }
+}

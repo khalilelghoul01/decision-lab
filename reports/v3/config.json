@@ -1,0 +1,20 @@
+{
+  "model": "LiquidAI/LFM2.5-350M",
+  "revision": "9e6c6ccf47cd318696e137d381a7ded8fe4df09f",
+  "output": "run",
+  "seed": 2026091803,
+  "max_length": 1024,
+  "max_choices": 8,
+  "batch_size": 8,
+  "accumulate": 4,
+  "steps": 3200,
+  "lora_rank": 16,
+  "adapter_lr": 0.0001,
+  "head_lr": 2e-05,
+  "eval_every": 200,
+  "save_every": 100,
+  "log_every": 10,
+  "max_minutes": 150.0,
+  "device": "cuda",
+  "attention": "sdpa"
+}

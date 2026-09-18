@@ -1,0 +1,131 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Jev-shaped local response",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "model",
+    "answers",
+    "usage"
+  ],
+  "properties": {
+    "model": {
+      "enum": [
+        "decision-lab-v2",
+        "decision-lab-v3"
+      ]
+    },
+    "answers": {
+      "type": "object",
+      "minProperties": 1,
+      "additionalProperties": {
+        "oneOf": [
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "choice",
+              "probabilities",
+              "confidence"
+            ],
+            "properties": {
+              "type": {
+                "const": "choice"
+              },
+              "choice": {
+                "type": "string"
+              },
+              "probabilities": {
+                "$ref": "#/$defs/probabilities"
+              },
+              "confidence": {
+                "$ref": "#/$defs/probability"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "score",
+              "legend",
+              "probabilities",
+              "confidence"
+            ],
+            "properties": {
+              "type": {
+                "const": "score"
+              },
+              "score": {
+                "type": "number",
+                "minimum": 0,
+                "maximum": 7
+              },
+              "legend": {
+                "type": "object",
+                "additionalProperties": {}
+              },
+              "probabilities": {
+                "$ref": "#/$defs/probabilities"
+              },
+              "confidence": {
+                "$ref": "#/$defs/probability"
+              }
+            }
+          },
+          {
+            "type": "object",
+            "additionalProperties": false,
+            "required": [
+              "type",
+              "noul"
+            ],
+            "properties": {
+              "type": {
+                "const": "noul"
+              },
+              "noul": {
+                "$ref": "#/$defs/probability"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "usage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "input_tokens",
+        "output_tokens"
+      ],
+      "properties": {
+        "input_tokens": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "output_tokens": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    }
+  },
+  "$defs": {
+    "probability": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    },
+    "probabilities": {
+      "type": "object",
+      "minProperties": 2,
+      "maxProperties": 8,
+      "additionalProperties": {
+        "$ref": "#/$defs/probability"
+      }
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "name": "decision-lab-sdk",
+  "version": "0.1.0",
+  "description": "Local WebGPU model loader and typed decision SDK for Decision Lab",
+  "type": "module",
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "scripts/copy-runtime.mjs",
+    "README.md",
+    "NOTICE.md",
+    "LICENSE"
+  ],
+  "bin": {
+    "decision-lab-assets": "scripts/copy-runtime.mjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./engine": {
+      "types": "./dist/engine.d.ts",
+      "import": "./dist/engine.js"
+    }
+  },
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "check": "tsc --noEmit",
+    "prepack": "npm run build"
+  },
+  "dependencies": {
+    "@huggingface/transformers": "4.3.0",
+    "onnxruntime-web": "1.24.3",
+    "ajv": "8.17.1"
+  },
+  "devDependencies": {
+    "esbuild": "0.28.2",
+    "typescript": "5.9.3"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khalilelghoul01/decision-lab.git",
+    "directory": "sdk"
+  },
+  "homepage": "https://github.com/khalilelghoul01/decision-lab/tree/main/sdk"
+}

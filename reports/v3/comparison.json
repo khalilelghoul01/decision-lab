@@ -1,0 +1,175 @@
+{
+  "scope": "Fresh final test, with public and generator-derived labels reported separately",
+  "models": {
+    "base-test-fast": {
+      "public": {
+        "count": 1600,
+        "accuracy": 0.554375,
+        "nll": 3.9647554159477636,
+        "brier": 0.8057181282830299,
+        "ece": 0.3861077403456307,
+        "high_confidence_errors": 517,
+        "truncated": 0
+      },
+      "synthetic": {
+        "count": 1600,
+        "accuracy": 0.474375,
+        "nll": 4.603189609304226,
+        "brier": 0.9828360399553264,
+        "ece": 0.4494912640105927,
+        "high_confidence_errors": 638,
+        "truncated": 0
+      }
+    },
+    "base-test-accurate": {
+      "public": {
+        "count": 1600,
+        "accuracy": 0.60875,
+        "nll": 1.6553513088171627,
+        "brier": 0.5571851078445558,
+        "ece": 0.11312289296447635,
+        "high_confidence_errors": 128,
+        "truncated": 0
+      },
+      "synthetic": {
+        "count": 1600,
+        "accuracy": 0.551875,
+        "nll": 1.6480291155174212,
+        "brier": 0.6276180906995192,
+        "ece": 0.1512559644653195,
+        "high_confidence_errors": 102,
+        "truncated": 0
+      }
+    },
+    "test-fast": {
+      "public": {
+        "count": 1600,
+        "accuracy": 0.829375,
+        "nll": 0.42793975364533116,
+        "brier": 0.24585740319174448,
+        "ece": 0.01594798575749018,
+        "high_confidence_errors": 30,
+        "truncated": 0
+      },
+      "synthetic": {
+        "count": 1600,
+        "accuracy": 0.994375,
+        "nll": 0.0238863514017227,
+        "brier": 0.010308456321881715,
+        "ece": 0.0017944443070264488,
+        "high_confidence_errors": 5,
+        "truncated": 0
+      }
+    },
+    "test-accurate": {
+      "public": {
+        "count": 1600,
+        "accuracy": 0.83125,
+        "nll": 0.4183077565901033,
+        "brier": 0.2383376859036025,
+        "ece": 0.02430558907716486,
+        "high_confidence_errors": 28,
+        "truncated": 0
+      },
+      "synthetic": {
+        "count": 1600,
+        "accuracy": 0.994375,
+        "nll": 0.023523509716728716,
+        "brier": 0.009837498468209653,
+        "ece": 0.002687827417792321,
+        "high_confidence_errors": 5,
+        "truncated": 0
+      }
+    },
+    "q4-test-fast": {
+      "public": {
+        "count": 1600,
+        "accuracy": 0.823125,
+        "nll": 0.4455582830513253,
+        "brier": 0.2545406753468508,
+        "ece": 0.015815591363216166,
+        "high_confidence_errors": 39,
+        "truncated": 0
+      },
+      "synthetic": {
+        "count": 1600,
+        "accuracy": 0.99125,
+        "nll": 0.027388874422371652,
+        "brier": 0.014063280912610741,
+        "ece": 0.003781921944138628,
+        "high_confidence_errors": 6,
+        "truncated": 0
+      }
+    },
+    "q4-test-accurate": {
+      "public": {
+        "count": 1600,
+        "accuracy": 0.83,
+        "nll": 0.4354998906435517,
+        "brier": 0.24910020281680315,
+        "ece": 0.02002996501746762,
+        "high_confidence_errors": 35,
+        "truncated": 0
+      },
+      "synthetic": {
+        "count": 1600,
+        "accuracy": 0.99125,
+        "nll": 0.031592386251704144,
+        "brier": 0.016998782237417402,
+        "ece": 0.006355132220590058,
+        "high_confidence_errors": 6,
+        "truncated": 0
+      }
+    }
+  },
+  "common_subset": {
+    "records": 2876,
+    "scope": "Identical final-test IDs with at most four choices; excludes the six-choice Emotion task and larger Banking77 candidate sets",
+    "v2": {
+      "public": {
+        "count": 1276,
+        "accuracy": 0.7547021943573667,
+        "nll": 0.5729348435195004,
+        "brier": 0.3377519765683039,
+        "ece": 0.025344949087192307,
+        "high_confidence_errors": 10,
+        "truncated": 1
+      },
+      "synthetic": {
+        "count": 1600,
+        "accuracy": 0.590625,
+        "nll": 0.8878321188874206,
+        "brier": 0.5235620863831524,
+        "ece": 0.0741093377396464,
+        "high_confidence_errors": 6,
+        "truncated": 0
+      }
+    },
+    "v3": {
+      "public": {
+        "count": 1276,
+        "accuracy": 0.8119122257053292,
+        "nll": 0.4589498144846629,
+        "brier": 0.2670035993711308,
+        "ece": 0.024086432404440368,
+        "high_confidence_errors": 25,
+        "truncated": 0
+      },
+      "synthetic": {
+        "count": 1600,
+        "accuracy": 0.994375,
+        "nll": 0.023523509716728716,
+        "brier": 0.009837498468209653,
+        "ece": 0.002687827417792321,
+        "high_confidence_errors": 5,
+        "truncated": 0
+      }
+    },
+    "paired": {
+      "both_correct": 1820,
+      "v3_only_correct": 807,
+      "v2_only_correct": 88,
+      "both_wrong": 161
+    }
+  }
+}

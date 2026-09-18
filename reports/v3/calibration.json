@@ -1,0 +1,11 @@
+{
+  "temperature": 1.3634747716202278,
+  "calibration_examples": 1600,
+  "objective": "Two-order multiclass negative log likelihood",
+  "nll_before": 0.24938707180235803,
+  "nll_after": 0.23579774971929937,
+  "bounds": [
+    0.1,
+    10
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "overall": {
+    "count": 3200,
+    "accuracy": 0.9071875,
+    "nll": 0.23647357873684846,
+    "brier": 0.1343019781297308,
+    "ece": 0.0067550182175932,
+    "high_confidence_errors": 45,
+    "truncated": 0
+  },
+  "macro_accuracy": 0.9071875,
+  "public_macro_accuracy": 0.823125,
+  "synthetic_macro_accuracy": 0.99125,
+  "tasks": {
+    "sst2": {
+      "count": 200,
+      "accuracy": 0.855,
+      "nll": 0.39539228793979986,
+      "brier": 0.23498843675419703,
+      "ece": 0.0675511514179182,
+      "high_confidence_errors": 13,
+      "truncated": 0
+    },
+    "piqa": {
+      "count": 200,
+      "accuracy": 0.625,
+      "nll": 0.6455707849724474,
+      "brier": 0.4512083838467087,
+      "ece": 0.04817027166532769,
+      "high_confidence_errors": 1,
+      "truncated": 0
+    },
+    "emotion": {
+      "count": 200,
+      "accuracy": 0.885,
+      "nll": 0.33447087331888725,
+      "brier": 0.16227249811831512,
+      "ece": 0.04208621622510504,
+      "high_confidence_errors": 4,
+      "truncated": 0
+    },
+    "boolq": {
+      "count": 200,
+      "accuracy": 0.775,
+      "nll": 0.5059415257702171,
+      "brier": 0.3359764728359045,
+      "ece": 0.06827201999542105,
+      "high_confidence_errors": 2,
+      "truncated": 0
+    },
+    "banking77": {
+      "count": 200,
+      "accuracy": 0.96,
+      "nll": 0.16618805214756108,
+      "brier": 0.07456960948864162,
+      "ece": 0.04764136440341915,
+      "high_confidence_errors": 2,
+      "truncated": 0
+    },
+    "absa": {
+      "count": 200,
+      "accuracy": 0.795,
+      "nll": 0.6293271641079532,
+      "brier": 0.3141614526571241,
+      "ece": 0.08004719269797109,
+      "high_confidence_errors": 12,
+      "truncated": 0
+    },
+    "snli": {
+      "count": 200,
+      "accuracy": 0.815,
+      "nll": 0.5045235724153008,
+      "brier": 0.26895017598102167,
+      "ece": 0.053485111701786825,
+      "high_confidence_errors": 2,
+      "truncated": 0
+    },
+    "synthetic_email": {
+      "count": 200,
+      "accuracy": 1.0,
+      "nll": 0.015209822049520282,
+      "brier": 0.0033958124297234697,
+      "ece": 0.014173513463900379,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "synthetic_aspect": {
+      "count": 200,
+      "accuracy": 0.975,
+      "nll": 0.0800226330091962,
+      "brier": 0.04216378546064626,
+      "ece": 0.020152261242305396,
+      "high_confidence_errors": 2,
+      "truncated": 0
+    },
+    "synthetic_support": {
+      "count": 200,
+      "accuracy": 0.995,
+      "nll": 0.018871413467931267,
+      "brier": 0.009822048900705873,
+      "ece": 0.004589187110436458,
+      "high_confidence_errors": 1,
+      "truncated": 0
+    },
+    "ag_news": {
+      "count": 200,
+      "accuracy": 0.875,
+      "nll": 0.38305200373843545,
+      "brier": 0.19419837309289406,
+      "ece": 0.041397355151590286,
+      "high_confidence_errors": 3,
+      "truncated": 0
+    },
+    "synthetic_risk": {
+      "count": 200,
+      "accuracy": 0.975,
+      "nll": 0.05878573220508341,
+      "brier": 0.03824660915466155,
+      "ece": 0.02112231197727514,
+      "high_confidence_errors": 3,
+      "truncated": 0
+    },
+    "synthetic_tool_policy": {
+      "count": 200,
+      "accuracy": 1.0,
+      "nll": 0.00603572400668921,
+      "brier": 0.0002948742544876003,
+      "ece": 0.005950519512476937,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "synthetic_routing": {
+      "count": 200,
+      "accuracy": 1.0,
+      "nll": 0.0035953026743875192,
+      "brier": 6.292156717783641e-05,
+      "ece": 0.003577425875919471,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "synthetic_qualification": {
+      "count": 200,
+      "accuracy": 0.985,
+      "nll": 0.035892678978183525,
+      "brier": 0.018518669160867706,
+      "ece": 0.02199948848937862,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    },
+    "synthetic_verification": {
+      "count": 200,
+      "accuracy": 1.0,
+      "nll": 0.0006976889879818263,
+      "brier": 1.5263726156361075e-06,
+      "ece": 0.0006972511028088269,
+      "high_confidence_errors": 0,
+      "truncated": 0
+    }
+  },
+  "orders": 1,
+  "temperature": 1.2975177150979105
+}

@@ -1,0 +1,37 @@
+{
+  "model": "decision-lab-v3",
+  "state": "wasn't good enough, the acting bad so bad",
+  "questions": {
+    "sentiment": {
+      "type": "choice",
+      "instructions": "What is the sentiment of this movie review?",
+      "criteria": {
+        "Negative": null,
+        "Positive": null
+      }
+    },
+    "good_acting": {
+      "type": "noul",
+      "instructions": "Was the acting good?"
+    },
+    "topic": {
+      "type": "choice",
+      "instructions": "What is this text about?",
+      "criteria": {
+        "Politics": null,
+        "Sports": null,
+        "Movies": null,
+        "Business": null
+      }
+    },
+    "acting_quality": {
+      "type": "score",
+      "instructions": "How is the acting described in the review?",
+      "criteria": [
+        "The acting is bad",
+        "The acting is average",
+        "The acting is good"
+      ]
+    }
+  }
+}

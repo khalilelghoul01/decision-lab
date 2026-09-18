@@ -1,0 +1,180 @@
+{
+  "format": 1,
+  "precision": "fp16",
+  "temperature": 1.2975177150979105,
+  "max_length": 1024,
+  "pad_token_id": 0,
+  "state_names": [
+    "conv_0",
+    "conv_1",
+    "key_2",
+    "value_2",
+    "conv_3",
+    "conv_4",
+    "key_5",
+    "value_5",
+    "conv_6",
+    "conv_7",
+    "key_8",
+    "value_8",
+    "conv_9",
+    "key_10",
+    "value_10",
+    "conv_11",
+    "key_12",
+    "value_12",
+    "conv_13",
+    "key_14",
+    "value_14",
+    "conv_15"
+  ],
+  "state_shapes": [
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      1024,
+      3
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      8,
+      1,
+      64
+    ],
+    [
+      1,
+      1024,
+      3
+    ]
+  ],
+  "weights_bytes": 295991296,
+  "graph_bytes": 269505,
+  "model": "LiquidAI/LFM2.5-350M",
+  "model_name": "decision-lab-v3",
+  "max_choices": 8,
+  "checkpoint": "runs/v3",
+  "base_revision": "9e6c6ccf47cd318696e137d381a7ded8fe4df09f",
+  "checkpoint_sha256": "ac1c9eeed6eb28113906ffafc8ef8f630e8401dcd73d0f07845f130ce086bcdc",
+  "validation": {
+    "onnx_full_logit_delta": 0.02781200408935547,
+    "onnx_cached_logit_delta": 0.0007724761962890625
+  },
+  "weight_quantization": {
+    "bits": 4,
+    "block_size": 32,
+    "symmetric": true,
+    "head": "fp32",
+    "embeddings": "fp16"
+  },
+  "quantization_fixture": {
+    "max_probability_delta": 0.012036101892590523,
+    "answers_agree": true,
+    "scope": "Small runtime fixture only; not general accuracy"
+  },
+  "calibration_accuracy_gate_passed": true
+}
