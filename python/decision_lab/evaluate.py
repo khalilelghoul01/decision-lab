@@ -11,7 +11,7 @@ import time
 from pathlib import Path
 import numpy as np
 import torch
-from decision_v3 import ConfigV3,PolicyV3,load_v3,metrics,predictions
+from decision_lab.train import ConfigV3,PolicyV3,load_v3,metrics,predictions
 
 def derived(records,orders,temperature):
     output=[]

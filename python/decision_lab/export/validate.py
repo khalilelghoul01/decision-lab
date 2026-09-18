@@ -7,8 +7,8 @@ from types import MethodType,SimpleNamespace
 import numpy as np
 import onnxruntime as ort
 from transformers import AutoTokenizer
-from decision_v3 import PolicyV3,metrics
-from evaluate_v3 import calibrate,derived
+from decision_lab.train import PolicyV3,metrics
+from decision_lab.evaluate import calibrate,derived
 
 def collect(artifact,rows):
     root=Path(artifact);meta=json.loads((root/'manifest.json').read_text())

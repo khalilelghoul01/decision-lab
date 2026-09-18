@@ -1,6 +1,6 @@
 import numpy as np
 import torch
-from decision_lab import rlcr_reward, sampled_rl_loss, metrics, reliability
+from decision_lab.legacy.v1 import rlcr_reward, sampled_rl_loss, metrics, reliability
 
 
 def test_reward_penalizes_confident_errors():

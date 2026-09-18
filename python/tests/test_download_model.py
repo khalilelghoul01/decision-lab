@@ -3,7 +3,7 @@ import zipfile
 from pathlib import Path
 import pytest
 
-spec = importlib.util.spec_from_file_location('download_model', Path(__file__).parent / 'scripts/download_model.py')
+spec = importlib.util.spec_from_file_location('download_model', Path(__file__).resolve().parents[2] / 'scripts/download_model.py')
 download = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(download)
 

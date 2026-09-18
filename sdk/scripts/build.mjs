@@ -4,15 +4,18 @@ import { build } from "esbuild";
 
 // The Python API and SDK share the canonical JSON contracts in the project.
 try {
-  await access("../protocol/jev-request.schema.json");
-  const request = await readFile("../protocol/jev-request.schema.json", "utf8");
+  await access("../python/decision_lab/schemas/jev-request.schema.json");
+  const request = await readFile(
+    "../python/decision_lab/schemas/jev-request.schema.json",
+    "utf8",
+  );
   const response = await readFile(
-    "../protocol/jev-response.schema.json",
+    "../python/decision_lab/schemas/jev-response.schema.json",
     "utf8",
   );
   await writeFile(
     "src/schemas.ts",
-    `// Generated from ../protocol by scripts/build.mjs.\nexport const requestSchema = ${request.trim()};\nexport const responseSchema = ${response.trim()};\n`,
+    `// Generated from ../python/decision_lab/schemas by scripts/build.mjs.\nexport const requestSchema = ${request.trim()};\nexport const responseSchema = ${response.trim()};\n`,
   );
 } catch (error) {
   if (error.code !== "ENOENT") throw error;

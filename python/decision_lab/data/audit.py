@@ -1,7 +1,7 @@
 """Validate the detailed JSONL release using only Python's standard library.
 
-Usage: python audit_v3_dataset.py runs/v3/dataset
-After extracting the release: python audit_v3_dataset.py dataset
+Usage: python -m decision_lab.data.audit runs/v3/dataset
+After extracting the release: python -m decision_lab.data.audit dataset
 """
 import argparse
 from collections import Counter

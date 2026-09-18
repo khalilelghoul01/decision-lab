@@ -1,6 +1,6 @@
 import pytest
-from evaluate_v3 import calibrate,derived
-from decision_v3 import metrics
+from decision_lab.evaluate import calibrate,derived
+from decision_lab.train import metrics
 
 def test_temperature_fit_reduces_nll_on_overconfident_errors():
     records=[{'id':str(i),'task':'synthetic_calibration' if i<20 else 'public','target':int(i%4==0),'prediction':0,

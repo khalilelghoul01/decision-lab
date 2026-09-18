@@ -1,4 +1,4 @@
-// Generated from ../protocol by scripts/build.mjs.
+// Generated from ../python/decision_lab/schemas by scripts/build.mjs.
 export const requestSchema = {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Jev-shaped local request; runtime enforces loaded-model limits",

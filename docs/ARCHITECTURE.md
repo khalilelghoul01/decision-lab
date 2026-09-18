@@ -59,7 +59,7 @@ There are two kinds of state to preserve:
 - Short-convolution state, which contains the relevant preceding activations.
 
 Both must be forked or broadcast correctly. Reusing only a Transformer-style
-KV cache would be wrong for this hybrid backbone. `portable_model.py` makes
+KV cache would be wrong for this hybrid backbone. `python/decision_lab/portable.py` makes
 the state tensors explicit for ONNX. The native cache helpers and portable
 graph have small numerical tests, including branch isolation.
 

@@ -1,0 +1,11 @@
+transformers==5.17.0
+peft==0.21.0
+datasets==5.0.1
+accelerate==1.15.0
+matplotlib>=3.8,<4
+torch>=2.8
+numpy>=1.26,<3
+jsonschema==4.26.0
+onnx==1.22.0
+onnxruntime==1.30.0
+onnxscript==0.7.2

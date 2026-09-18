@@ -9,8 +9,8 @@ import random
 from collections import Counter
 from pathlib import Path
 from datasets import load_dataset
-from decision_lab import SOURCES as OLD_SOURCES, normalize
-from v3_synthetic import generate
+from decision_lab.legacy.v1 import SOURCES as OLD_SOURCES, normalize
+from decision_lab.data.synthetic import generate
 
 ROOT=Path('runs/v3'); SEED=2026091803
 SOURCES={**{k:(v[0],v[1],None) for k,v in OLD_SOURCES.items()},
@@ -53,8 +53,8 @@ def build():
                 for row in d.get(split,[]):
                     old_all.add(key(row['context']))
                     if split!='train':old_eval.add(key(row['context']))
-    if Path('evals/v3-exclusion-contexts.json').exists():
-        exclusions=json.loads(Path('evals/v3-exclusion-contexts.json').read_text())
+    if Path('research/evals/v3-exclusion-contexts.json').exists():
+        exclusions=json.loads(Path('research/evals/v3-exclusion-contexts.json').read_text())
         old_all.update(exclusions['all_previous']);old_eval.update(exclusions['previous_eval'])
     result={s:[] for s in ('train','dev','calibration','test')}
     used={s:set() for s in result}

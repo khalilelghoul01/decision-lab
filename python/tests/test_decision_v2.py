@@ -4,8 +4,8 @@ from types import SimpleNamespace
 import pytest
 import torch
 from torch import nn
-from decision_lab import example_key
-from decision_v2 import predict_rows
+from decision_lab.legacy.v1 import example_key
+from decision_lab.legacy.v2 import predict_rows
 
 
 class PositionBiasedMock(nn.Module):
@@ -62,8 +62,8 @@ def test_actual_v2_splits_are_disjoint_and_final_is_fresh():
 
 
 def test_finalize_resumes_remaining_checks_without_refitting_or_retesting(tmp_path, monkeypatch):
-    import decision_v2 as v2
-    from decision_lab import SOURCES
+    import decision_lab.legacy.v2 as v2
+    from decision_lab.legacy.v1 import SOURCES
     cfg = v2.ConfigV2(output=str(tmp_path))
     torch.save({'stage': 'complete'}, tmp_path / 'latest.pt')
     rows = [{'task': task, 'target': 0, 'options': ['A', 'B']} for task in SOURCES]

@@ -8,9 +8,9 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from decision_engine import DecisionEngine, aligned_probabilities
-from decision_v2 import REVISION as V2_REVISION
-from portable_model import PortableDecision
+from decision_lab.engine import DecisionEngine, aligned_probabilities
+from decision_lab.legacy.v2 import REVISION as V2_REVISION
+from decision_lab.portable import PortableDecision
 
 
 EXAMPLE_ROWS = [

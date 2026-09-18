@@ -6,8 +6,8 @@ import torch
 from torch import nn
 from transformers import Lfm2Config, Lfm2Model
 
-from decision_engine import fork_cache, compile_schema, assemble
-from portable_model import PortableDecision
+from decision_lab.engine import fork_cache, compile_schema, assemble
+from decision_lab.portable import PortableDecision
 
 
 @pytest.fixture(params=[4,8])

@@ -6,7 +6,7 @@ import statistics
 import time
 from pathlib import Path
 import torch
-from decision_engine import DecisionEngine
+from decision_lab.engine import DecisionEngine
 
 QUESTIONS=[
  ('What is the sentiment of the review?',['Negative','Positive']),

@@ -9,9 +9,9 @@ import math
 from pathlib import Path
 from jsonschema import Draft202012Validator
 
-from decision_engine import Prepared, aligned_probabilities
+from decision_lab.engine import Prepared, aligned_probabilities
 
-ROOT = Path(__file__).parent / 'protocol'
+ROOT = Path(__file__).parent / 'schemas'
 REQUEST = json.loads((ROOT/'jev-request.schema.json').read_text())
 RESPONSE = json.loads((ROOT/'jev-response.schema.json').read_text())
 
@@ -92,7 +92,7 @@ def system_one(engine, request, fast=False):
 
 if __name__=='__main__':
     import argparse
-    from decision_engine import DecisionEngine
+    from decision_lab.engine import DecisionEngine
     parser=argparse.ArgumentParser();parser.add_argument('request');parser.add_argument('--fast',action='store_true')
     parser.add_argument('--checkpoint',default='runs/v2',help='Local checkpoint directory, e.g. runs/v3')
     args=parser.parse_args()

@@ -43,7 +43,7 @@ if a.records:
             for file in sorted(a.records.glob(pattern)):
                 z.write(file, file.name)
         z.write('docs/RESULTS.md', 'RESULTS.md')
-        z.write('artifacts.json', 'artifacts.json')
+        z.write('scripts/artifacts.json', 'artifacts.json')
         z.writestr('README.md', 'Per-example predictions from the frozen V3 evaluation.\nThese are dataset IDs, labels and model scores, not a fresh independent test.\nSee RESULTS.md and the source repository for task definitions and limitations.\n')
 checks = []
 for file in sorted(out.iterdir()):

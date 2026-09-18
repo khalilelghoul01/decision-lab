@@ -3,6 +3,6 @@ sdk/src/schemas.ts
 **/dist
 artifacts
 licenses
-reports
-evals
+research/reports
+research/evals
 browser/public

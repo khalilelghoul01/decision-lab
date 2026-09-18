@@ -3,7 +3,7 @@ import math
 from types import SimpleNamespace
 import pytest
 from jsonschema import ValidationError
-from jev_protocol import compile_request, build_response, distribution_confidence, prepare_strict
+from decision_lab.protocol import compile_request, build_response, distribution_confidence, prepare_strict
 
 
 @pytest.fixture

@@ -20,3 +20,5 @@ browser/public/ort/
 *.weights
 *.safetensors
 *.log
+*.egg-info/
+**/build/

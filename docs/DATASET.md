@@ -70,7 +70,7 @@ are programmatic; source code is included for inspection.
 - Synthetic evaluation uses separate wrapper templates, entity names and sentiment vocabulary, but the same generator logic. Report it separately from public data and real-world evaluation.
 - This dataset does not establish broad prompt-injection resistance, multilingual ability, legal expertise or production reliability.
 - Upstream datasets retain their own licenses and terms. This compilation does not relicense them.
-- `reports/v3/source-cards.json` records license and language metadata from the pinned upstream dataset cards; consult those sources before redistribution or commercial use.
+- `research/reports/v3/source-cards.json` records license and language metadata from the pinned upstream dataset cards; consult those sources before redistribution or commercial use.
 
 ## Training boundary
 
@@ -82,10 +82,11 @@ every record is consumed in one free GPU session.
 
 ## Reproduce
 
-Run `build_v3_data.py` from the repository root with the pinned Python dependencies
-and included `evals/v3-exclusion-contexts.json` hash manifest. The builder refuses to overwrite a frozen run.
+Run `python -m decision_lab.data.build` from the repository root with the pinned Python dependencies
+and included `research/evals/v3-exclusion-contexts.json` hash manifest. The builder refuses to overwrite a frozen run.
 Included audit files document the actual produced dataset.
-Run `python audit_v3_dataset.py dataset` inside the extracted release to check all
-record labels, provenance fields, duplicate prompts, and split overlaps without ML dependencies.
+After building, run `python -m decision_lab.data.audit runs/v3/dataset` from the
+repository root to check labels, provenance, duplicate prompts and split overlaps.
+The audit itself uses only Python's standard library.
 
 Full data SHA256: `be3b54f8361922d94344f8accf106b9b52fb925322dd80588e81b104cd70877c`

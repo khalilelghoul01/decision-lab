@@ -36,7 +36,7 @@ def main():
     p.add_argument('--native', action='store_true', help='Download the native adapter/head instead of browser weights.')
     p.add_argument('--archive', type=Path, help='Use an already-downloaded release ZIP (still verifies SHA256).')
     args = p.parse_args()
-    release = json.loads((ROOT / 'artifacts.json').read_text())
+    release = json.loads((ROOT / 'scripts/artifacts.json').read_text())
     artifact = release['native' if args.native else 'browser']
     destination = ROOT if args.native else ROOT / 'browser/public'
     if (destination / artifact['prefix']).exists():

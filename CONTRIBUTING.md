@@ -22,7 +22,7 @@ npm ci --ignore-scripts
 npm run build
 ```
 
-Python setup is in [Training](docs/TRAINING.md). Run `pytest -q` after changing
+Python setup is in [Training](docs/TRAINING.md). Run `pytest -q -c python/pyproject.toml` after changing
 the native runtime, training math or protocol. Small tests should not download
 full model weights. Changes to the graph, tokenizer, prompt format or caches
 also need real native/ONNX/browser parity checks.

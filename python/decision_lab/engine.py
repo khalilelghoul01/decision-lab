@@ -16,7 +16,7 @@ from pathlib import Path
 import torch
 from transformers.cache_utils import DynamicLayer, LinearAttentionLayer
 
-from decision_v2 import load_v2
+from decision_lab.legacy.v2 import load_v2
 
 
 def fork_cache(cache, batch_size):
@@ -101,8 +101,8 @@ class DecisionEngine:
             raise ValueError('precision must be fp32 or fp16')
         config=json.loads((Path(path)/'config.json').read_text())
         if config.get('model'):
-            from decision_v3 import load_v3
-            from decision_lab import device_for
+            from decision_lab.train import load_v3
+            from decision_lab.legacy.v1 import device_for
             model=load_v3(path,str(device_for(device)))
         else:model = load_v2(path, device)
         model.backbone = model.backbone.merge_and_unload(safe_merge=True)

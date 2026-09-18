@@ -4,11 +4,11 @@ import hashlib
 import json
 from pathlib import Path
 import torch
-from decision_engine import DecisionEngine
-from jev_protocol import system_one
+from decision_lab.engine import DecisionEngine
+from decision_lab.protocol import system_one
 
 def main(checkpoint,output):
-    source=Path('evals/jev-usecases-v2.json');suite=json.loads(source.read_text())
+    source=Path('research/evals/jev-usecases-v2.json');suite=json.loads(source.read_text())
     engine=DecisionEngine.load(checkpoint,precision='fp16');cases=[]
     model_name=getattr(engine.model,'model_name','decision-lab-v2')
     for case in suite['cases']:

@@ -11,7 +11,7 @@ The LFM Open License contains commercial-use conditions; it is a separate
 license from this repository's MIT source-code license.
 
 Dataset source names, revisions and license metadata appear in `docs/DATASET.md`
-and `reports/v3/source-cards.json`. The original public dataset texts are not
+and `research/reports/v3/source-cards.json`. The original public dataset texts are not
 relicensed or bundled in Git. Evaluation exclusion manifests contain hashes.
 Hand-authored synthetic workflow cases are research fixtures, not real customer data.
 

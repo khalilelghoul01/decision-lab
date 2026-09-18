@@ -192,7 +192,7 @@ def build():
                            'no_training_or_prompt_tuning': True, 'core_cases': len(cases), 'stress_cases': len(stress)},
               'cases': cases + stress}
     encoded = json.dumps(result, ensure_ascii=False, indent=2).encode()
-    root = Path('evals'); root.mkdir(exist_ok=True)
+    root = Path('research/evals'); root.mkdir(parents=True, exist_ok=True)
     path = root/'jev-usecases-v2.json'
     if path.exists() and path.read_bytes() != encoded:
         raise RuntimeError('Frozen suite exists with different contents. Create an explicitly versioned new suite.')

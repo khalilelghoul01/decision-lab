@@ -7,29 +7,30 @@ SSH or any private API credentials.
 
 The recorded run is evidence of one execution, not a promise of bit-for-bit
 determinism across GPU kernels, package versions, or machines. The source
-revisions, data audits and selected configuration are in `reports/v3`.
+revisions, data audits and selected configuration are in `research/reports/v3`.
 
 ## Environment
+
+Run the commands below from the repository root.
 
 ```sh
 python3 -m venv .venv
 source .venv/bin/activate
 pip install torch==2.11.0
-pip install -r requirements-engine.txt
-pip install pytest
+pip install -e './python[dev]'
 ```
 
 On Colab, use its supplied PyTorch build if compatible. The original T4 run
 used torch 2.11.0+cu128, transformers 5.17.0 and PEFT 0.21.0. Dataset construction
-used the pinned dependencies in `requirements.txt`; Colab's already-built
+used the pinned dependencies in `python/requirements.txt`; Colab's already-built
 training payload did not need to regenerate the dataset there.
 
 ## Build and audit the data
 
 ```sh
-python build_v3_data.py
-python audit_v3_dataset.py runs/v3/dataset
-python check_v3_lengths.py --root runs/v3
+python -m decision_lab.data.build
+python -m decision_lab.data.audit runs/v3/dataset
+python -m decision_lab.data.lengths --root runs/v3
 ```
 
 The builder retrieves public datasets at pinned revisions and generates rule
@@ -55,7 +56,7 @@ of the interrupted training history.
 ## Train on the GPU
 
 ```sh
-python decision_v3.py \
+python -m decision_lab.train \
   --data runs/v3/training-data.json \
   --output runs/v3 \
   --steps 3200 \
@@ -79,10 +80,10 @@ actually consumed by the selected checkpoint.
 
 ```sh
 python scripts/prepare_evaluation.py --root runs/v3
-python evaluate_v3.py \
+python -m decision_lab.evaluate \
   --root runs/v3 \
   --data runs/v3/evaluation-data.json \
-  --suite evals/jev-usecases-v2.json
+  --suite research/evals/jev-usecases-v2.json
 ```
 
 Evaluation requires `training-complete.json` and refuses to overwrite its final
@@ -96,9 +97,9 @@ and its files. It is not required to train or evaluate V3.
 ## Export, compress and verify
 
 ```sh
-python export_browser.py --checkpoint runs/v3 --output browser/public/model-v3
-python quantize_browser.py browser/public/model-v3 browser/public/model-v3-q4
-python validate_quantized.py --root runs/v3 --artifact browser/public/model-v3-q4
+python -m decision_lab.export.browser --checkpoint runs/v3 --output browser/public/model-v3
+python -m decision_lab.export.quantize browser/public/model-v3 browser/public/model-v3-q4
+python -m decision_lab.export.validate --root runs/v3 --artifact browser/public/model-v3-q4
 ```
 
 Use calibration results and browser reference checks to choose an artifact
@@ -107,8 +108,8 @@ percentage point of calibration accuracy loss in both public and synthetic
 task averages. Record your choice before running:
 
 ```sh
-python validate_quantized.py --root runs/v3 --artifact browser/public/model-v3-q4 --final-test
-python export_jev_browser_suite.py --checkpoint runs/v3
+python -m decision_lab.export.validate --root runs/v3 --artifact browser/public/model-v3-q4 --final-test
+python -m decision_lab.export.suite --checkpoint runs/v3
 ```
 
 Run the playground's **Run checks** and **Test Jev use cases** buttons on the
@@ -120,7 +121,7 @@ Do not advertise a speed improvement from file-size reduction alone.
 
 ```sh
 python scripts/download_model.py --native
-python jev_protocol.py examples/jev-review-request.json --checkpoint runs/v3
+python -m decision_lab.protocol examples/jev-review-request.json --checkpoint runs/v3
 ```
 
 The checkpoint download contains adapters/head, configuration and calibration.
@@ -130,7 +131,7 @@ It is not an optimizer-state archive for resuming the historical training run.
 ## Tests without downloading model weights
 
 ```sh
-pytest -q
+pytest -q -c python/pyproject.toml
 cd sdk
 npm ci --ignore-scripts
 npm test
@@ -139,4 +140,4 @@ npm test
 The Python tests use small synthetic model configurations and probability
 fixtures. One historical-data test is skipped when the V1/V2 data are absent.
 The JavaScript tests mock the runtime for lifecycle/error cases; the recorded
-real-WebGPU checks are separate evidence in `reports`.
+real-WebGPU checks are separate evidence in `research/reports`.

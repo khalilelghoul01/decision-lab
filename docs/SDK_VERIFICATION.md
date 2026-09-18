@@ -41,6 +41,6 @@ Five warm four-field requests in accurate mode measured 148.48, 144.57, 144.84,
 and prompt encoding; model download, initial load and shader compilation are
 excluded. This small sample is not a latency guarantee.
 
-Raw evidence: `../reports/sdk-browser-checks.json`. This verifies runtime behavior and
-known regressions; it is not a fresh model-accuracy benchmark. Existing model
-accuracy and limitations remain in `RESULTS.md`.
+The [raw evidence](../research/reports/sdk-browser-checks.json) verifies runtime
+behavior and known regressions; it is not a fresh model-accuracy benchmark.
+Existing model accuracy and limitations remain in [Results](RESULTS.md).

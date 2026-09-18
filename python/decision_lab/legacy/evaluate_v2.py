@@ -2,8 +2,8 @@
 import json
 from pathlib import Path
 import torch
-from decision_v2 import load_v2,predict_rows
-from decision_v3 import metrics
+from decision_lab.legacy.v2 import load_v2,predict_rows
+from decision_lab.train import metrics
 
 root=Path('runs/v3')
 if not (root/'training-complete.json').exists():raise RuntimeError('Wait for V3 model selection to finish.')

@@ -17,7 +17,7 @@ import numpy as np
 import torch
 from torch import nn
 from torch.nn import functional as F
-from decision_lab import (MODEL, REVISION, SOURCES, LETTERS, N_BINS, normalize,
+from decision_lab.legacy.v1 import (MODEL, REVISION, SOURCES, LETTERS, N_BINS, normalize,
     example_key, device_for, seed_all, trainable_state, load_trainable,
     save_checkpoint, sampled_rl_loss, warmup_loss, metrics)
 
@@ -379,7 +379,7 @@ def finalize(cfg,old_checkpoint=None):
     model.backbone.save_pretrained(root/'adapter',safe_serialization=True)
     model.tokenizer.save_pretrained(root/'adapter')
     if old_checkpoint and not (root/'v1-fresh-test.json').exists():
-        from decision_lab import load_run,evaluate,Config
+        from decision_lab.legacy.v1 import load_run,evaluate,Config
         old=load_run(old_checkpoint,cfg.device)
         old_cfg=Config(**json.loads((Path(old_checkpoint)/'config.json').read_text()))
         old_cfg.output=str(root)

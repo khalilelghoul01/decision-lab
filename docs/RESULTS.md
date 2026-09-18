@@ -100,7 +100,7 @@ The runtime scores field suffixes after one shared context prefill. It maps choi
 
 Local limits: 2–8 choices or Score levels, 32 questions, 1,024 tokens per full field prompt. The typed API rejects oversized requests. It supports Jev-shaped Choice, Noul and Score responses, not arbitrary free-text extraction or Jev's private model, service, billing, or exact confidence formula.
 
-Aggregate evidence is in [reports/v3](../reports/v3/), including `comparison.json`,
+Aggregate evidence is in [research/reports/v3](../research/reports/v3/), including `comparison.json`,
 `q4-test-accurate.json`, `jev-regression.json`, `browser-q4-jev.json`, and the
 native/browser benchmark reports. Per-example predictions are a separate
 `decision-lab-evaluation-records.zip` asset in [Releases](https://github.com/khalilelghoul01/decision-lab/releases).
