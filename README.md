@@ -19,11 +19,9 @@ independently implemented and unaffiliated with Jev or TypeSafe.
 
 ```mermaid
 flowchart LR
-    A[Shared context] --> B[Prefill once]
-    B --> C[Reuse cached state]
-    C --> D[Score each field]
-    D --> E[Allowed-answer probabilities]
-    E --> F[Typed JSON]
+    A[Context] --> B[Shared cache]
+    B --> C[Field scores]
+    C --> D[Typed JSON]
 ```
 
 The runtime supports **Choice** (a label), **Noul** (P(yes)), and **Score**
