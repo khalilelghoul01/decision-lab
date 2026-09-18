@@ -6,7 +6,7 @@ An open research experiment built on a fine-tuned 350M model. It runs locally
 in a WebGPU browser or Python. Inspired by Jev's typed decision interface;
 independently implemented and unaffiliated with Jev or TypeSafe.
 
-[Try it](#try-it) · [How it works](docs/ARCHITECTURE.md) ·
+[Live playground](https://decision-lab.loomens.com) · [Run locally](#try-it) · [How it works](docs/ARCHITECTURE.md) ·
 [Results](docs/RESULTS.md) · [SDK](sdk/README.md) ·
 [Contribute](CONTRIBUTING.md) · [Documentation](docs/README.md)
 
@@ -31,7 +31,14 @@ not one total forward pass. Valid JSON does not guarantee correct decisions.
 
 ## Try it
 
-Requires Node.js 20+, Python 3.12+, and a browser with WebGPU and `shader-f16`.
+Open **[decision-lab.loomens.com](https://decision-lab.loomens.com)** for the
+complete browser playground. It includes editable Jev-shaped requests, Choice,
+Noul and Score visualizations, raw JSON, an on-device speed benchmark, numerical
+parity checks, and the frozen workflow evaluation suite. Model inference runs in
+your browser; prompts are not sent to a server.
+
+To run it yourself, use Node.js 20+, Python 3.12+, and a browser with WebGPU and
+`shader-f16`:
 
 ```sh
 git clone https://github.com/khalilelghoul01/decision-lab.git
@@ -43,7 +50,8 @@ npm --prefix browser ci --ignore-scripts
 npm --prefix browser run dev
 ```
 
-Open the printed URL. `/sdk.html` shows the model loader. Prompts stay local;
+Open the printed URL. `/diagnostics.html` exposes the low-level runtime checks
+and `/sdk.html` shows the model-loader lifecycle. Prompts stay local;
 the first load includes roughly **296 MB of weights** and shader compilation.
 
 Prefer a ready-built demo? Download `decision-lab-browser-demo.zip` from

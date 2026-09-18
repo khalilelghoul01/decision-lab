@@ -1,5 +1,7 @@
 # Documentation
 
+- [Browser playground and Cloudflare deployment](PLAYGROUND.md)
+
 | I want to… | Read |
 | --- | --- |
 | Explain the experiment to someone | [Short explainer](EXPLAINER.md) |

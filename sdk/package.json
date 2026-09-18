@@ -33,7 +33,7 @@
   "dependencies": {
     "@huggingface/transformers": "4.3.0",
     "onnxruntime-web": "1.24.3",
-    "ajv": "8.17.1"
+    "ajv": "8.20.0"
   },
   "devDependencies": {
     "esbuild": "0.28.2",

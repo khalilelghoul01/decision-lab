@@ -10,5 +10,5 @@ export default defineConfig({
   optimizeDeps: {
     exclude: ["onnxruntime-web", "onnxruntime-web/webgpu", "decision-lab-sdk"],
   },
-  build: { rollupOptions: { input: { main: "index.html", sdk: "sdk.html" } } },
+  build: { rollupOptions: { input: { main: "index.html", diagnostics: "diagnostics.html", sdk: "sdk.html" } } },
 });
