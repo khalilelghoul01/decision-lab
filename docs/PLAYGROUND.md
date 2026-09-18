@@ -36,6 +36,11 @@ R2 responses support `GET`, `HEAD`, and byte-range requests, carry immutable
 cache headers for versioned binaries, and are returned from the same origin.
 The application sends COOP and COEP headers required by the runtime.
 
+Microsoft Clarity measures page navigation and feature usage. The context,
+question builder, request/schema editors, model output, and session history are
+marked with `data-clarity-mask`, so user-entered text and derived decisions are
+excluded from recordings.
+
 ## Reproduce the deployment
 
 Authenticate Wrangler, download the public model into
