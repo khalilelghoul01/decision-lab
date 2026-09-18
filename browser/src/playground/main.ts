@@ -3,8 +3,9 @@ import { clearModelCache, type JevRequest, type JevQuestion, type JevResponse, t
 import { BrowserDecisionEngine, compileSchema, type Schema, type Row } from '../engine';
 import requestSchema from '../../../python/decision_lab/schemas/jev-request.schema.json';
 import { examples, defaultSchema, groupNames } from './examples';
-import { escape, pct, median, icon, downloadJson } from './ui';
+import { escape, pct, median, icon, downloadJson, highlightTypeScript } from './ui';
 import { template } from './template';
+import { loadClarity } from './analytics';
 import './playground.css';
 
 const $ = <T extends HTMLElement = HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -24,6 +25,7 @@ let busy = false, loading = false, supported = false, stopSuite = false;
 let controller: AbortController | undefined, current: Run | undefined, runs: Run[] = [], nextRun = 1;
 let toastTimer: ReturnType<typeof setTimeout>;
 document.querySelector('#app')!.innerHTML = template;
+loadClarity();
 
 function toast(message: string) { $('toast').textContent = message; $('toast').hidden = false; clearTimeout(toastTimer); toastTimer = setTimeout(() => $('toast').hidden = true, 4000); }
 function error(e?: unknown) { $('global-error').hidden = !e; $('global-error').textContent = e instanceof Error ? e.message : String(e ?? ''); }
@@ -277,7 +279,7 @@ $('run-suite').onclick=()=>work(async()=>{
 $('stop-suite').onclick=()=>{stopSuite=true;$('suite-progress').textContent='Stopping after the current GPU request…';};
 $('suite-rows').onclick=event=>{const el=(event.target as HTMLElement).closest<HTMLElement>('[data-inspect]');if(!el)return;const row=evalRows[Number(el.dataset.inspect)];$('suite-details').hidden=false;($('suite-details') as HTMLDetailsElement).open=true;$('suite-detail-json').textContent=pretty({...row,request:suite?.cases.find(c=>c.id===row.id)?.request});$('suite-details').scrollIntoView({behavior:'smooth',block:'nearest'});};
 $('export-suite').onclick=()=>downloadJson('decision-lab-browser-evaluation.json',{created_at:new Date().toISOString(),backend:'webgpu',model:'decision-lab-v3-int4',configuration:'system_one_two_orders',suite_sha256:suite?.suite_sha256,rows:evalRows});
-$('sdk-snippet').textContent=`import { loadModel, choice, noul } from 'decision-lab-sdk';\n\nconst model = await loadModel({\n  modelUrl: '/model-v3-q4',\n  onProgress: e => console.log(e.message),\n});\n\nconst result = await model.systemOne({\n  state: 'Bad plot, excellent acting.',\n  questions: {\n    good_acting: noul('Was the acting good?'),\n    topic: choice('What is this about?', {\n      Movies: null, Sports: null,\n    }),\n  },\n}, { mode: 'accurate' });\n\nconsole.log(result.answers);\nawait model.dispose();`;
+$('sdk-snippet').innerHTML=highlightTypeScript(`import { loadModel, choice, noul } from 'decision-lab-sdk';\n\nconst model = await loadModel({\n  modelUrl: '/model-v3-q4',\n  onProgress: e => console.log(e.message),\n});\n\nconst result = await model.systemOne({\n  state: 'Bad plot, excellent acting.',\n  questions: {\n    good_acting: noul('Was the acting good?'),\n    topic: choice('What is this about?', {\n      Movies: null, Sports: null,\n    }),\n  },\n}, { mode: 'accurate' });\n\nconsole.log(result.answers);\nawait model.dispose();`);
 selectExample('review');route();syncControls();
 (async()=>{
   try{const gpu=(navigator as any).gpu,adapter=gpu?await gpu.requestAdapter():null;supported=!!adapter&&adapter.features.has('shader-f16');$('device-status').textContent=supported?'WebGPU available':'WebGPU / FP16 unavailable';$('gpu-dot').classList.toggle('available',supported);if(!supported)$('load-status').textContent='Use a WebGPU browser with FP16 support (for example recent Chrome or Edge). Examples and documentation remain available.';}catch{$('device-status').textContent='GPU check failed';}finally{syncControls();}
